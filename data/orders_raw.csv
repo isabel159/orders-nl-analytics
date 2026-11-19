@@ -1,0 +1,1237 @@
+order_id,order_date,customer,country,product,amount,status
+ORD-00001,2025-05-17,Julia Herrera Silva,Portugal,Ratón,24.82,completado
+ORD-00002,2024-11-09,Andrés Castro Castro,España,Auriculares,79.30,completado
+ORD-00003,2025-07-17,Gabriel Pérez Herrera,Argentina,Disco SSD,105.06,completado
+ORD-00004,2024-07-16,Mateo Martínez Castro,Colombia,Auriculares,73.83,completado
+ORD-00005,2024-10-10,Mateo Vargas López,México,Teclado,,completado
+ORD-00006,2024-07-17,Tomás Castro Gómez,España,Disco SSD,114.13,completado
+ORD-00007,2024-10-07,Gabriel Pérez Herrera,Argentina,Auriculares,77.43,completado
+ORD-00008,2025-05-17,Andrés Castro Castro,España,Auriculares,72.60,completado
+ORD-00009,2024-07-07,Ana Ruiz Pérez,Francia,Auriculares,76.32,devuelto
+ORD-00010,2025-05-18,Elena Martínez López,España,Escritorio,226.54,completado
+ORD-00011,2024-11-07,Martín Silva Sánchez,Francia,Portátil,,completado
+ORD-00012,2025-09-25,Elena Martínez López,España,Disco SSD,216.03,completado
+ORD-00013,2025-08-25,Laura Ortega Martínez,España,Escritorio,470.41,devuelto
+ORD-00014,2024-04-11,Gabriel Pérez Herrera,Argentina,Tablet,468.76,cancelado
+ORD-00015,2024/09/02,Diego Rodríguez Martínez,España,Ratón,22.71,completado
+ORD-00016,2025-04-26,Andrés Castro Castro,España,Portátil,902.06,completado
+ORD-00017,2025-12-04,Diego Sánchez López,Francia,Auriculares,76.48,completado
+ORD-00018,2025-13-05,Gabriel López Castro,España,Tablet,466.98,completado
+ORD-00019,2024-03-14,Diego Ruiz Romero,Portugal,Teclado,102.19,completado
+ORD-00020,2025-02-30,Nicolás Rodríguez Rodríguez,Colombia,Tablet,442.44,completado
+ORD-00021,2025-05-27,Julia Castro Herrera,México,Auriculares,82.27,completado
+ORD-00190,2024-11-16,Hugo López Rojas,Colombia,Escritorio,246.76,pendiente
+ORD-00022,2024-11-26,Isabel García Díaz,España,Tablet,433.20,completado
+ORD-00023,2025-08-12,Andrés Castro Castro,España,Ratón,76.60,completado
+ORD-00024,2024-06-28,Andrés Castro Castro,España,Auriculares,80.14,completado
+ORD-00025,2025-10-12,Mateo Fernández Herrera,España,Auriculares,78.04,pendiente
+ORD-00026,2025-11-17,Tomás Castro Gómez,España,Escritorio,236.55,completado
+ORD-00027,2025-02-14,Daniel Díaz Sánchez,Chile,Silla ergonómica,300.89,pendiente
+ORD-00028,2024-04-28,Lucía López Gómez,Chile,Escritorio,233.53,devuelto
+ORD-00029,2025-07-09,Hugo López Rojas,Colombia,Disco SSD,196.24,completado
+ORD-00030,2025-10-02,Andrés Castro Castro,España,Disco SSD,110.47,completado
+ORD-00031,2025-03-24,Andrés Castro Castro,España,Auriculares,82.09,cancelado
+ORD-00032,2024-09-02,Julia Herrera Silva,Portugal,Portátil,2673.62,completado
+ORD-00033,2024-04-26,Gabriel Pérez Herrera,Argentina,Portátil,821.67,completado
+ORD-00034,2025-06-05,Camila Sánchez Martínez,Francia,Teclado,50.27,completado
+ORD-00035,2025-07-18,Hugo López Rojas,Colombia,Escritorio,699.61,completado
+ORD-00036,2024-03-12,Diego Fernández Torres,Chile,Tablet,463.32,completado
+ORD-00037,2024-09-30,Nicolás Rodríguez Rodríguez,Colombia,Silla ergonómica,324.79,pendiente
+ORD-00038,2025-11-06,Gabriel Pérez Herrera,Argentina,Auriculares,155.94,completado
+ORD-00039,2025-07-10,Carmen Martínez Ruiz,Argentina,Disco SSD,103.54,completado
+ORD-00040,2025-01-27,Sofía Castro Díaz,España,Ratón,69.91,completado
+ORD-00041,25-01-2025,Nicolás Rodríguez Rodríguez,Colombia,Portátil,872.88,completado
+ORD-00042,2025-05-29,Mateo Fernández Herrera,España,Teclado,45.19,devuelto
+ORD-00043,2025-06-22,Gabriel Pérez Herrera,Argentina,Monitor,442.45,cancelado
+ORD-00044,2024-06-07,Andrés Castro Castro,España,Teclado,49.81,completado
+ORD-00045,2025-10-27,Nicolás Rodríguez Rodríguez,Colombia,Auriculares,79.31,completado
+ORD-00046,2025-05-14,Gabriel Pérez Herrera,Argentina,Disco SSD,103.28,pendiente
+ORD-00047,2024-10-21,Andrés Castro Castro,España,Monitor,229.61,devuelto
+ORD-00048,21/12/2025,Nicolás Rodríguez Castro,Argentina,Silla ergonómica,970.45,pendiente
+ORD-00049,2024-02-27,Isabel García Díaz,España,Auriculares,143.29,completado
+ORD-00050,2025-11-29,Gabriel Pérez Herrera,Argentina,Teclado, ,completado
+ORD-00051,2025-11-30,Daniel Herrera Rodríguez,Espana,Monitor,219.24,completado
+ORD-00052,2025-04-15,Sofía Castro Díaz,España,Teclado, ,completado
+ORD-00053,2024-06-10,Ana Ortega Rodríguez,Chile,Escritorio,498.82,completado
+ORD-00054,2025-12-07,Sofía Ortega Herrera,Chile,Tablet,468.89,completado
+ORD-00353,2025-04-15,Nicolás Rodríguez Rodríguez,Colombia,Portátil,893.54,completado
+ORD-00055,2024-04-19,Paula Silva Gómez,España,Ratón,76.79,completado
+ORD-00056,2024-01-23,Marta Rojas Fernández,Francia,Tablet,451.20,devuelto
+ORD-00057,2024-02-20,Mateo Fernández Herrera,España,Auriculares,81.35,cancelado
+ORD-00058,2024-12-26,Nicolás Gómez Romero,México,Auriculares,,completado
+ORD-00059,2025-11-06,Diego Fernández Torres,Chile,Auriculares,79.64,completado
+ORD-00060,2024-11-12,Carmen Díaz López,Portugal,Monitor,456.60,completado
+ORD-00061,2024-10-29,Andrés Castro Castro,España,Webcam,53.90,completado
+ORD-00062,2025-01-09,Hugo López Rojas,Colombia,Ratón,24.42,completado
+ORD-00063,2025-05-08,Sofía Castro Díaz,España,Teclado,51.08,devuelto
+ORD-00064,2024/03/18,Gabriel Pérez Herrera,Argentina,Webcam,114.49,completado
+ORD-00065,2025-01-09,Tomás Castro Gómez,España,Silla ergonómica,976.80,completado
+ORD-00066,2025-11-19,Hugo López Rojas,Colombia,Auriculares,76.49,completado
+ORD-00067,2024-04-20,Gabriel López Castro,España,Silla ergonómica,664.19,completado
+ORD-00068,2025-09-16,Julia Castro Herrera,México,Tablet,883.82,completado
+ORD-00069,2025-02-22,Andrés Castro Castro,España,Escritorio,"470,77",completado
+ORD-00070,2024-04-09,Andrés Castro Castro,España,Portátil,875.53,completado
+ORD-00071,2025-12-14,Laura Torres Díaz,España,Silla ergonómica,319.18,cancelado
+ORD-00072,2025-05-16,Hugo López Rojas,Colombia,Teclado,99.62,completado
+ORD-00073,2025-03-30,Sofía Fernández Torres,México,Auriculares,75.49,completado
+ORD-00074,2025-07-11,Elena García Navarro,Argentina,Webcam,59.17,cancelado
+ORD-00075,2024-05-05,Mateo Fernández Herrera,España,Portátil,834.70,cancelado
+ORD-00076,,Paula Herrera García,Francia,Monitor,228.14,devuelto
+ORD-01135,2025-03-24,Martín Navarro Silva,España,Monitor,237.93,completado
+ORD-00077,2025-08-01,Andrés Castro Castro,España,Webcam,54.21,completado
+ORD-00078,2024-08-26,Paula Navarro Castro,España,Disco SSD,101.63,completado
+ORD-00079,2024-05-28,Carmen Martínez Ruiz,Argentina,Tablet,461.91,devuelto
+ORD-00080,2024-05-14,Laura Torres Díaz,España,Teclado,51.40,completado
+ORD-00081,2024-09-28,Nicolás Rodríguez Rodríguez,Colombia,Ratón,22.47,completado
+ORD-00082,2025-04-04,Mateo Vargas López,México,Disco SSD,99.14,completado
+ORD-00083,2025-09-21,Laura García Rojas,Argentina,Monitor,213.71,completado
+ORD-00084,2024-02-01,Nicolás Rodríguez Rodríguez,Colombia,Disco SSD,108.62,completado
+ORD-00085,2025-12-30,Julia Fernández Sánchez,MÉXICO,Silla ergonómica,292.27,cancelado
+ORD-00086,2024-05-09,Andrés Castro Castro,España,Monitor,211.20,completado
+ORD-00087,2025-09-03,Martín Silva Sánchez,Francia,Disco SSD,104.33,completado
+ORD-00088,2024-04-27,Isabel Vargas Díaz,Argentina,Tablet,457.52,pendiente
+ORD-00089,2025-04-07,Mateo Fernández Herrera,España,Disco SSD,101.62,cancelado
+ORD-00090,2024-11-16,Hugo López Rojas,Colombia,Escritorio,,completado
+ORD-00091,2025-04-30,Mateo Fernández Herrera,España,Webcam,177.54,completado
+ORD-00600,2024-10-07,Mateo Fernández Herrera,España,Monitor,224.01,pendiente
+ORD-00092,2025-01-16,Paula Ortega Sánchez,Francia,Monitor,231.68,pendiente
+ORD-00093,2025-11-17,Lucía Martínez López,España,Tablet,1325.79,completado
+ORD-00094,2024-10-21,Gabriel Pérez Herrera,Argentina,Silla ergonómica,643.21,completado
+ORD-00095,2025-05-08,Gabriel Pérez Herrera,Argentina,Tablet,414.52,completado
+ORD-00096,2025-08-10,Camila Morales Díaz,Chile,Disco SSD,110.57,completado
+ORD-00097,2025-09-20,Hugo Ortega Herrera,Argentina,Disco SSD, ,completado
+ORD-00098,2024-09-30,Lucía Pérez Torres,Portugal,Tablet,919.93,completado
+ORD-00099,2024-07-04,Gabriel Pérez Herrera,Argentina,Auriculares,150.52,pendiente
+ORD-00100,2024-02-01,Marta Castro Fernández,Colombia,Silla ergonómica,322.56,completado
+ORD-00101,2025-01-13,Laura Ortega Martínez,España,Silla ergonómica,303.41,completado
+ORD-00102,2024-06-08,Gabriel Pérez Herrera,Argentina,Tablet,463.59,completado
+ORD-00103,2025-05-12,Martín Ortega Herrera,Colombia,Monitor,228.84,completado
+ORD-00104,2025-03-16,Hugo López Rojas,Colombia,Ratón,45.67,completado
+ORD-00105,2024-02-16,Mateo López Herrera,Chile,Tablet,449.03,completado
+ORD-00106,2024-08-04,Tomás López Fernández,México,Portátil,849.75,completado
+ORD-00107,2025-03-16,Nicolás Rodríguez Rodríguez,Colombia,Auriculares,,completado
+ORD-00108,2024-12-28,Gabriel Pérez Herrera,Argentina,Ratón,25.52,completado
+ORD-00109,2024-03-20,Sebastián Castro Rojas,España,Portátil,871.10,pendiente
+ORD-00110,2024-10-23,Marta Silva Sánchez,Argentina,Tablet,447.21,completado
+ORD-00111,2025-04-16,Andrés Castro Castro,España,Webcam,61.49,pendiente
+ORD-00112,2025-03-22,Sofía Castro Díaz,España,Monitor,"209,74",completado
+ORD-00113,2024-08-14,Laura Ortega Martínez,España,Silla ergonómica,"645,57",completado
+ORD-00114,2024-07-17,Daniel Herrera Rodríguez,España,Disco SSD,106.78,cancelado
+ORD-00115,2024-07-21,Gabriel Pérez Herrera,Argentina,Teclado,"46,01",completado
+ORD-00116,2025-05-20,Carmen Martínez Ruiz,Argentina,Monitor,232.65,completado
+ORD-00117,2025-08-01,Marta Castro Fernández,Colombia,Tablet,466.34,completado
+ORD-00118,2024-06-03,Tomás López Fernández,México,Webcam,117.30,completado
+ORD-00119,2024-12-26,Julia Castro Herrera,México,Auriculares,156.22,completado
+ORD-00120,2024-10-20,Gabriel Pérez Herrera,Argentina,Escritorio,237.87,completado
+ORD-00121,2025-04-18,Sebastián Díaz López,México,Monitor,223.52,completado
+ORD-00122,2025-10-29,Sofía Sánchez Vargas,Colombia,Portátil,918.30,completado
+ORD-00123,2024-04-15,Martín Navarro Silva,España,Disco SSD,99.11,pendiente
+ORD-00124,2024-09-10,Paula Rodríguez Gómez,México,Monitor,212.03,completado
+ORD-00125,2025-01-16,Valentina Díaz Pérez,España,Disco SSD,"100,70",cancelado
+ORD-00126,2025-10-08,Hugo Díaz Morales,México,Webcam,53.56,completado
+ORD-00127,2024-09-15,Andrés Castro Castro,España,Monitor,"219,38",completado
+ORD-00128,2025-08-19,Mateo Fernández Herrera,España,Tablet,853.10,completado
+ORD-00129,2025-02-05,Sofía Castro Díaz,España,Auriculares, ,completado
+ORD-00130,2024-12-02,Mateo Rodríguez Pérez,Argentina,Monitor,219.04,pendiente
+ORD-00131,2025-06-04,Mateo Fernández Herrera,España,Disco SSD,109.06,completado
+ORD-00132,2025-05-12,Gabriel Pérez Herrera,Argentina,Teclado,142.40,completado
+ORD-00133,2024-04-13,Valentina Ruiz López,Chile,Teclado,51.23,completado
+ORD-00134,,Laura Torres Díaz,España,Disco SSD,103.61,completado
+ORD-00135,2025-10-01,Gabriel Pérez Herrera,Argentina,Teclado,"50,10",pendiente
+ORD-00136,2024-08-31,Daniel Herrera Herrera,Portugal,Escritorio,237.71,devuelto
+ORD-00293,2025-04-06,Nicolás Rodríguez Rodríguez,Colombia,Portátil,914.76,completado
+ORD-00137,2025-04-25,Martín Ortega Herrera,Colombia,Escritorio,233.03,cancelado
+ORD-00138,2024-10-15,Diego García López,Colombia,Tablet,1305.58,completado
+ORD-00139,2025-09-11,Julia López Fernández,Colombia,Silla ergonómica,978.56,completado
+ORD-00140,2024-04-15,Elena Martínez López,España,Escritorio,489.62,completado
+ORD-00141,2024-10-06,Laura Morales Pérez,Argentina,Monitor,232.31,completado
+ORD-00142,2025-04-06,Laura García Rojas,Argentina,Silla ergonómica,330.67,cancelado
+ORD-00143,2024-08-29,Sofía Castro Díaz,España,Silla ergonómica,311.12,completado
+ORD-00144,2025-10-27,Andrés Navarro Gómez,España,Ratón,25.89,completado
+ORD-00145,2025-12-13,Carmen Martínez Ruiz,Argentina,Portátil,920.99,pendiente
+ORD-00146,2024-03-22,Nicolás Rodríguez Rodríguez,Colombia,Escritorio,224.30,completado
+ORD-00836,2025-05-13,Elena García Navarro,Argentina,Monitor,230.55,completado
+ORD-00147,2025-06-24,Diego Rodríguez Morales,México,Teclado,50.35,completado
+ORD-00148,2025-03-05,Nicolás Rodríguez Rodríguez,Colombia,Ratón,22.59,completado
+ORD-00149,2025-09-03,Martín Pérez Vargas,Francia,Monitor,237.19,completado
+ORD-00150,2025-03-15,Martín Silva Sánchez,Francia,Tablet,"413,77",completado
+ORD-00151,2024-03-28,Gabriel Pérez Herrera,Argentina,Tablet,448.85,completado
+ORD-00152,2025-06-03,Gabriel Pérez Herrera,Argentina,Disco SSD,110.96,completado
+ORD-00153,2025-01-17,Hugo López Rojas,Colombia,Escritorio, ,completado
+ORD-00154,2025-10-05,Andrés Castro Castro,España,Monitor,231.28,completado
+ORD-00155,2024-12-12,Marta Silva Sánchez,Argentina,Webcam,56.22,pendiente
+ORD-01156,2025-04-04,Gabriel Pérez Herrera,Argentina,Portátil,1872.08,completado
+ORD-00156,2024-07-05,Daniel Silva López,Espana,Escritorio,725.92,pendiente
+ORD-00157,2024-07-23,Andrés Castro Castro,España,Escritorio,231.63,cancelado
+ORD-00158,2025-07-10,Gabriel Pérez Herrera,Argentina,Auriculares,82.82,completado
+ORD-00159,N/A,Andrés Castro Castro,España,Ratón,25.63,pendiente
+ORD-00160,2025-02-13,Gabriel Pérez Herrera,Argentina,Monitor,442.22,completado
+ORD-00161,2025-12-09,Sebastián Navarro Navarro,España,Silla ergonómica,296.04,completado
+ORD-00162,2025-03-10,Sofía Castro Díaz,España,Disco SSD,99.45,completado
+ORD-00163,2024-03-22,Martín Morales López,México,Teclado,47.31,completado
+ORD-00164,2025-12-07,Gabriel Pérez Herrera,Argentina,Escritorio,240.02,completado
+ORD-00165,2025-10-16,Isabel Rojas Navarro,España,Webcam,56.95,devuelto
+ORD-00166,2025-06-09,Sofía Ortega Herrera,Chile,Monitor,220.05,pendiente
+ORD-00167,24-03-2025,Mateo Martínez Castro,Colombia,Portátil,891.03,completado
+ORD-00168,2024-02-03,Andrés Castro Castro,España,Webcam,,completado
+ORD-00169,2025-08-10,Mateo Martínez Castro,Colombia,Webcam,59.85,completado
+ORD-00170,2024-04-26,Gabriel Pérez Herrera,Argentina,Webcam,55.31,completado
+ORD-00171,2024-09-25,Diego Fernández Sánchez,México,Disco SSD,107.28,completado
+ORD-00172,2025-05-17,Mateo Martínez Castro,Colombia,Ratón,70.43,completado
+ORD-00173,2025-03-31,Carmen Díaz López,Portugal,Monitor,236.97,DEVUELTO
+ORD-00174,2025-07-17,Nicolás Sánchez Navarro,Chile,Webcam,59.38,completado
+ORD-00175,2025-10-15,Sebastián Navarro Navarro,España,Teclado,51.85,completado
+ORD-00176,2024-05-22,Gabriel Pérez Herrera,Argentina,Ratón,"23,16",completado
+ORD-00177,2025-07-18,Julia Herrera Silva,Portugal,Webcam,56.36,completado
+ORD-00178,2025-05-05,Sebastián Martínez Herrera,Francia,Monitor,240.44,completado
+ORD-00179,2025-10-19,Nicolás Rodríguez Rodríguez,Colombia,Tablet,469.59,completado
+ORD-00180,2025-07-18,Julia Castro Herrera,México,Disco SSD,112.45,completado
+ORD-00181,2024-02-26,Daniel Torres Fernández,México,Teclado,51.73,pendiente
+ORD-00182,2025-12-27,Laura Ortega Martínez,España,Auriculares,74.92,completado
+ORD-00183,2024-09-13,Sofía Ortega Herrera,Chile,Disco SSD,223.86,completado
+ORD-00184,2025-06-30,Sofía Vargas Vargas,Portugal,Auriculares,74.69,completado
+ORD-00185,05-11-2025,Mateo Fernández Herrera,España,Tablet,1243.45,completado
+ORD-00186,2024-01-30,Sebastián Silva Herrera,España,Webcam,116.18,completado
+ORD-00187,2025-08-08,Sofía Ortega Herrera,Chile,Tablet,418.30,completado
+ORD-00188,2025-10-19,Martín Vargas Torres,Chile,Escritorio,488.95,devuelto
+ORD-00189,2024-03-02,Julia Herrera Castro,Chile,Silla ergonómica,290.59,completado
+ORD-00190,2024-11-16,Hugo López Rojas,Colombia,Escritorio,246.76,pendiente
+ORD-00191,2025-01-14,Gabriel Pérez Herrera,Argentina,Webcam,162.77,completado
+ORD-00192,2024-09-10,Camila Morales Díaz,Chile,Ratón,23.41,completado
+ORD-00193,2024-06-12,Andrés Castro Castro,España,Silla ergonómica,614.22,pendiente
+ORD-00194,2025-06-11,Sofía Castro Díaz,España,Webcam,54.51,completado
+ORD-00195,2025-06-01,Sebastián Herrera López,España,Escritorio,259.40,completado
+ORD-00196,2025-05-21,Elena López García,Argentina,Tablet,"407,50",completado
+ORD-00197,2024-04-20,Paula Romero Rojas,Chile,Escritorio,224.41,completado
+ORD-00198,2025-02-14,Sebastián Herrera Romero,España,Webcam,112.68,completado
+ORD-00199,2025-05-31,Lucía Vargas Díaz,Argentina,Webcam,,completado
+ORD-00200,2024-04-09,Lucía López Gómez,Chile,Tablet,412.10,completado
+ORD-00201,2024-05-27,Nicolás Rodríguez Rodríguez,Colombia,Webcam,56.34,completado
+ORD-00202,2025-12-31,Julia Romero Rojas,España,Disco SSD,98.74,completado
+ORD-00203,2024-05-23,Julia Castro Torres,Colombia,Escritorio,257.46,completado
+ORD-00204,2024-11-02,Martín Ortega Herrera,Colombia,Teclado,49.52,completado
+ORD-00205,2024-11-02,Julia Rodríguez Herrera,Argentina,Disco SSD,109.69,completado
+ORD-00206,2025-08-20,Andrés Castro Castro,España,Webcam,61.77,completado
+ORD-00207,2025-11-02,Sebastián Silva Herrera,España,Portátil,844.91,completado
+ORD-00208,2025-05-06,Nicolás Rodríguez Rodríguez,Colombia,Tablet,407.56,completado
+ORD-00209,2025-11-28,Martín Silva Sánchez,Francia,Tablet,"859,41",completado
+ORD-00210,2025-03-04,Marta Rojas Fernández,Francia,Monitor,221.25,completado
+ORD-00211,2025-04-27,Mateo Martínez Castro,Colombia,Silla ergonómica,316.36,pendiente
+ORD-00212,2025-07-28,Mateo Sánchez Gómez,España,Portátil,879.04,completado
+ORD-00213,2025-04-15,Mateo Fernández Herrera,España,Disco SSD,113.74,cancelado
+ORD-00998,2024-12-29,Martín García Torres,México,Escritorio,228.11,devuelto
+ORD-00214,2025-11-28,Gabriel Pérez Herrera,Argentina,Webcam,60.78,completado
+ORD-00215,2024-10-12,Mateo Martínez Castro,Colombia,Tablet,468.58,completado
+ORD-00216,2025-12-07,Diego Ruiz Romero,Portugal,Auriculares,158.91,completado
+ORD-00217,2024-10-07,Gabriel Pérez Herrera,Argentina,Webcam,61.37,completado
+ORD-00218,2024-12-19,Marta Rojas Fernández,Francia,Disco SSD,114.13,devuelto
+ORD-00219,2024-03-21,Nicolás Sánchez Navarro,Chile,Auriculares,82.42,completado
+ORD-00220,2025-07-05,Isabel García Díaz,España,Auriculares,73.64,completado
+ORD-00221,2025-08-23,Lucía Vargas Díaz,Argentina,Auriculares,,completado
+ORD-00222,2024-04-12,Andrés Castro Castro,España,Disco SSD,101.91,completado
+ORD-00223,2025-07-17,Mateo Romero Morales,Francia,Monitor,210.82,devuelto
+ORD-00224,2024-10-21,Daniel Díaz Sánchez,Chile,Escritorio,231.55,completado
+ORD-00225,2024-02-08,Mateo Fernández Herrera,España,Monitor,214.08,cancelado
+ORD-00226,2025-02-10,Daniel Silva López,España,Teclado,135.55,completado
+ORD-00087,2025-09-03,Martín Silva Sánchez,Francia,Disco SSD,104.33,completado
+ORD-00227,2025-08-04,Diego Fernández Sánchez,México,Auriculares,142.42,completado
+ORD-00228,N/A,Sofía Castro Díaz,España,Webcam,61.85,completado
+ORD-00229,2024-07-16,Sebastián Martínez Rodríguez,España,Teclado,96.83,pendiente
+ORD-00230,2024-01-15,Gabriel Pérez Herrera,Argentina,Escritorio,250.94,completado
+ORD-00231,2025-09-17,Nicolás Rodríguez Rodríguez,Colombia,Tablet,417.11,pendiente
+ORD-00232,2025-11-16,Sebastián Romero Ortega,México,Silla ergonómica,291.25,completado
+ORD-00233,2024-09-24,Tomás Gómez Vargas,Argentina,Escritorio,233.36,completado
+ORD-00234,2025-08-09,Isabel Rojas Navarro,España,Auriculares,224.03,completado
+ORD-00235,2024-11-10,Mateo Fernández Herrera,España,Ratón,22.85,completado
+ORD-00236,2024-10-29,Mateo Martínez Castro,Colombia,Auriculares,78.67,completado
+ORD-00237,2025-09-12,Diego Ruiz Romero,Portugal,Teclado,48.32,completado
+ORD-00238,2024-08-11,Mateo Martínez Castro,Colombia,Escritorio,508.11,completado
+ORD-00239,2025-04-02,Mateo Martínez Castro,Colombia,Tablet,819.23,completado
+ORD-00240,2025-06-01,Gabriel Pérez Herrera,Argentina,Tablet,459.92,completado
+ORD-00241,2024-04-29,Laura Torres Díaz,España,Teclado,48.80,completado
+ORD-00242,2024-02-26,Mateo Romero Morales,Francia,Escritorio,243.16,completado
+ORD-00243,2025-11-19,Laura García Rojas,Argentina,Escritorio,244.97,pendiente
+ORD-00244,2024-08-11,Mateo Romero Morales,Francia,Silla ergonómica,287.24,completado
+ORD-00245,2024-03-02,Andrés Castro Castro,España,Webcam,57.89,cancelado
+ORD-00246,2024-05-18,Andrés Castro Castro,España,Escritorio,239.37,completado
+ORD-00247,2025-04-04,Tomás Castro Gómez,España,Silla ergonómica,329.75,pendiente
+ORD-01071,2024-05-13,Nicolás Sánchez Navarro,Chile,Auriculares,76.96,completado
+ORD-00248,2025-07-06,Sebastián Silva Herrera,España,Silla ergonómica,333.23,completado
+ORD-00249,2025-06-25,Sebastián Castro Rojas,España,Monitor,224.55,completado
+ORD-00250,2025-04-19,Tomás Castro Gómez,España,Portátil,,completado
+ORD-00251,2025-04-16,Laura Torres Díaz,España,Disco SSD,101.86,completado
+ORD-00252,2025-09-21,Gabriel Pérez Herrera,Argentina,Monitor,228.78,completado
+ORD-00253,31-08-2025,Sebastián Martínez Herrera,Francia,Portátil,818.17,completado
+ORD-00254,2025-03-25,Martín Morales López,México,Portátil,815.07,completado
+ORD-00255,2024-08-27,Diego Ruiz Romero,Portugal,Portátil,943.07,pendiente
+ORD-00256,2025-13-05,Mateo Sánchez Gómez,España,Webcam,59.94,completado
+ORD-00257,2024-03-03,Sebastián Herrera López,España,Disco SSD,103.01,completado
+ORD-00258,2025-05-22,Martín Morales López,México,Teclado,48.11,completado
+ORD-00259,2025-03-02,Gabriel Pérez Herrera,Argentina,Silla ergonómica,604.70,completado
+ORD-00260,2024-08-18,Gabriel Pérez Herrera,Argentina,Teclado,96.91,completado
+ORD-00261,2025-02-30,Mateo Rodríguez Pérez,Argentina,Escritorio,490.21,completado
+ORD-00262,2024-03-21,Carmen Díaz López,Portugal,Ratón,"23,64",cancelado
+ORD-00263,22/02/2024,Paula Silva Gómez,España,Monitor,234.59,completado
+ORD-00264,2025-08-24,Mateo Fernández Herrera,España,Tablet,409.00,completado
+ORD-00265,2024-11-06,Lucía Pérez Torres,Portugal,Escritorio,257.98,devuelto
+ORD-00266,2025-05-05,Andrés Castro Castro,España,Ratón,68.54,cancelado
+ORD-00267,2024-11-25,Mateo Martínez Castro,Colombia,Ratón,23.30,completado
+ORD-00268,2025-01-03,Gabriel Pérez Herrera,Argentina,Disco SSD,103.14,completado
+ORD-00269,2024-11-23,Julia Herrera Silva,Portugal,Monitor,461.83,cancelado
+ORD-00477,2024-10-16,Valentina Ruiz López,Chile,Webcam,58.35,completado
+ORD-00270,2024-05-29,Gabriel Pérez Herrera,Argentina,Silla ergonómica,328.45,completado
+ORD-00271,2024-06-05,Lucía López Sánchez,España,Tablet,432.22,completado
+ORD-00272,2025-11-01,Diego Ruiz Romero,Portugal,Tablet,875.46,cancelado
+ORD-00273,2025-05-17,Gabriel Pérez Herrera,Argentina,Escritorio,744.20,completado
+ORD-00274,2025-05-15,Mateo Sánchez Gómez,España,Webcam,59.47,completado
+ORD-00275,2024-03-17,Sebastián Martínez Rodríguez,España,Portátil,922.25,cancelado
+ORD-00276,2024-08-24,Mateo Fernández Herrera,España,Portátil,922.72,completado
+ORD-00277,2025-09-24,Carmen Martínez Ruiz,Argentina,Ratón,23.80,completado
+ORD-00278,2025-06-28,Sofía Castro Díaz,España,Escritorio,224.69,completado
+ORD-00279,2024-10-20,Ana Ruiz Pérez,Francia,Disco SSD,106.86,completado
+ORD-00280,2024-04-19,Nicolás Sánchez Navarro,Chile,Silla ergonómica,661.27,cancelado
+ORD-00281,2024-12-28,Laura Ortega Martínez,España,Ratón,24.38,completado
+ORD-00282,2024-09-06,Hugo López Rojas,Colombia,Webcam,171.49,devuelto
+ORD-00283,2024-02-02,Diego Ruiz Romero,Portugal,Monitor,235.58,completado
+ORD-00284,2025-12-20,Gabriel Pérez Herrera,Argentina,Disco SSD,108.51,completado
+ORD-00285,2024-04-07,Julia Herrera Silva,Portugal,Silla ergonómica,302.95,cancelado
+ORD-00286,2025-08-03,Sofía Castro Díaz,España,Ratón,25.65,completado
+ORD-00287,2025-07-10,Andrés Castro Castro,España,Monitor,215.73,completado
+ORD-00288,2024-05-27,Andrés Castro Castro,España,Webcam,54.93,completado
+ORD-00289,2025-07-31,Mateo Romero Morales,Francia,Silla ergonómica,602.84,completado
+ORD-00290,2025-01-28,Paula Ortega Sánchez,Francia,Silla ergonómica,312.97,completado
+ORD-00291,2024-02-24,Carmen Díaz López,Portugal,Monitor,239.57,completado
+ORD-00292,2025-09-01,Diego Sánchez López,Francia,Monitor,232.52,completado
+ORD-00293,2025-04-06,Nicolás Rodríguez Rodríguez,Colombia,Portátil,914.76,completado
+ORD-00294,2025-11-07,Gabriel Pérez Herrera,Argentina,Silla ergonómica,319.62,completado
+ORD-00295,2024-03-25,Nicolás Rodríguez Rodríguez,Colombia,Auriculares,159.10,completado
+ORD-00296,2024-04-19,Gabriel Pérez Herrera,Argentina,Teclado,47.28,completado
+ORD-00297,2024-05-15,Sofía Morales Sánchez,España,Escritorio,234.18,completado
+ORD-00298,2024-01-27,Hugo Pérez Castro,México,Disco SSD,104.77,completado
+ORD-00299,2025-01-29,Lucía López Sánchez,España,Tablet,425.95,completado
+ORD-00300,2024-09-05,Hugo López Rojas,Colombia,Monitor,225.32,completado
+ORD-00301,2024-10-01,Daniel Herrera Rodríguez,España,Silla ergonómica,299.97,completado
+ORD-00302,2024-03-19,Andrés Castro Castro,España,Silla ergonómica,301.44,completado
+ORD-00303,2024-04-19,Sofía Morales Sánchez,España,Escritorio,231.40,completado
+ORD-00304,2024-12-03,Ana Morales García,España,Silla ergonómica,316.78,completado
+ORD-00305,2025-12-12,Hugo Ortega Herrera,Argentina,Tablet,425.70,completado
+ORD-00306,2025-12-12,Gabriel Pérez Herrera,Argentina,Silla ergonómica,903.14,completado
+ORD-00307,2025-02-06,Tomás Castro Gómez,España,Ratón,23.46,completado
+ORD-00308,2025-11-29,Sofía Castro Díaz,España,Ratón,24.45,completado
+ORD-00309,2024-10-25,Andrés Castro Castro,España,Escritorio,695.79,pendiente
+ORD-00310,2024-11-06,Andrés Castro Castro,España,Silla ergonómica,293.76,completado
+ORD-00311,2025-09-04,Mateo Fernández Herrera,España,Silla ergonómica,581.28,completado
+ORD-00312,2025-03-04,Hugo López Rojas,Colombia,Disco SSD,224.64,completado
+ORD-00313,2025-08-31,Nicolás Rodríguez Rodríguez,Colombia,Webcam,60.29,completado
+ORD-00314,2025-10-24,Andrés Navarro Gómez,España,Ratón,23.74,completado
+ORD-00315,2025-03-16,Lucía Vargas Díaz,Argentina,Silla ergonómica,908.90,completado
+ORD-00316,2025-08-17,Camila Fernández Navarro,México,Ratón,24.35,completado
+ORD-00317,2025-08-25,Diego Ruiz Romero,Portugal,Webcam,59.94,completado
+ORD-00318,2024-03-28,Carmen Martínez Ruiz,Argentina,Portátil,848.94,completado
+ORD-00319,2024-07-30,Sofía Fernández Torres,México,Teclado,47.48,completado
+ORD-00320,2024-11-22,Gabriel Pérez Herrera,Argentina,Monitor,230.03,completado
+ORD-00321,2024-04-21,Andrés Castro Castro,España,Monitor,217.88,completado
+ORD-00322,2024-12-04,Daniel Herrera Fernández,México,Ratón,24.47,  completado 
+ORD-00323,2024-07-09,Sofía Vargas Vargas,Portugal,Ratón,49.52,completado
+ORD-00324,2025-04-05,Hugo Pérez Castro,México,Portátil,928.19,completado
+ORD-00325,2024-03-05,Hugo Díaz Morales,México,Ratón,25.22,completado
+ORD-00326,2025-04-13,Nicolás Romero Rojas,México,Disco SSD,103.43,completado
+ORD-00327,2025-09-03,Mateo Fernández Herrera,España,Escritorio,247.97,completado
+ORD-00328,2025-09-24,Hugo López Rojas,Colombia,Monitor,235.14,completado
+ORD-00329,2025-11-19,Mateo Fernández Herrera,España,Auriculares,156.19,completado
+ORD-00330,2024-05-24,Camila Sánchez Martínez,Francia,Auriculares,75.52,completado
+ORD-00331,2025-05-13,Hugo López Rojas,Colombia,Teclado,48.08,completado
+ORD-00332,2024-05-23,Mateo Martínez Castro,Colombia,Teclado,48.57,completado
+ORD-00333,2024-01-10,Paula Romero Rojas,Chile,Tablet,428.28,completado
+ORD-00185,05-11-2025,Mateo Fernández Herrera,España,Tablet,1243.45,completado
+ORD-00334,2025-05-21,Diego García López,Colombia,Silla ergonómica,933.86,completado
+ORD-00335,2024-02-01,Julia Herrera Silva,Portugal,Escritorio,227.19,completado
+ORD-00336,2024-06-21,Diego Ruiz Romero,Portugal,Portátil,881.60,completado
+ORD-00337,2024-04-26,Marta Castro Fernández,Colombia,Escritorio,,completado
+ORD-00338,2025-03-27,Laura Torres Díaz,España,Webcam,59.80,completado
+ORD-00339,2024-09-10,Valentina Díaz Pérez,España,Monitor,228.55,completado
+ORD-00340,2024-03-30,Valentina Ruiz López,Chile,Escritorio,256.30,completado
+ORD-00341,2025-12-06,Valentina Fernández Romero,México,Ratón,25.16,completado
+ORD-00342,2024-07-30,Mateo Romero Morales,Francia,Silla ergonómica,293.76,pendiente
+ORD-00343,2025-07-05,Nicolás Sánchez Navarro,Chile,Tablet,423.03,completado
+ORD-00344,2025-06-10,Tomás Castro Gómez,España,Auriculares,74.27,devuelto
+ORD-00345,2025-02-25,Mateo Martínez Castro,Colombia,Monitor,231.87,cancelado
+ORD-00346,2024-05-29,Valentina Fernández Romero,México,Teclado,45.90,completado
+ORD-00347,2024-10-02,Paula Navarro Castro,España,Silla ergonómica,314.73,completado
+ORD-00348,2024-04-05,Gabriel Pérez Herrera,Argentina,Monitor,236.33,completado
+ORD-00349,2025-08-18,Nicolás Rodríguez Navarro,España,Webcam,57.42,completado
+ORD-00350,2025-02-30,Nicolás Rodríguez Rodríguez,Colombia,Monitor,221.85,completado
+ORD-00351,2024-08-04,Paula Torres Martínez,Chile,Disco SSD,113.93,completado
+ORD-00352,2025-08-02,Gabriel Pérez Herrera,Argentina,Auriculares,77.95,pendiente
+ORD-00353,2025-04-15,Nicolás Rodríguez Rodríguez,Colombia,Portátil,893.54,completado
+ORD-00354,2025-03-14,Sofía Castro Díaz,España,Teclado,44.92,completado
+ORD-00355,2024-10-07,Mateo Martínez Castro,Colombia,Teclado,94.34,completado
+ORD-00356,2024-06-18,Gabriel Pérez Herrera,Argentina,Monitor,237.15,completado
+ORD-00357,2024-04-07,Martín Ruiz Navarro,Francia,Ratón,22.75,completado
+ORD-00358,2025-03-31,Julia Castro Torres,Colombia,Teclado,48.80,completado
+ORD-00359,2024-05-15,Mateo Martínez Castro,Colombia,Monitor,661.82,completado
+ORD-00360,2024-00-10,Diego Ruiz Romero,Portugal,Monitor,209.62,completado
+ORD-00361,2024-05-16,Gabriel Pérez Herrera,Argentina,Silla ergonómica,646.28,completado
+ORD-00362,2025-10-27,Mateo López Herrera,Chile,Monitor,206.39,completado
+ORD-00363,N/A,Gabriel Pérez Herrera,Argentina,Ratón,22.98,completado
+ORD-00364,2024-05-06,Isabel García Díaz,España,Ratón,22.79,completado
+ORD-00365,2024-10-10,Gabriel Rodríguez Sánchez,España,Silla ergonómica,293.79,completado
+ORD-00366,2025-12-08,Elena Martínez López,España,Tablet,445.02,completado
+ORD-00367,2024-07-12,Paula Silva Gómez,España,Auriculares,78.29,  completado 
+ORD-00368,2024-09-02,Gabriel Pérez Herrera,argentina,Portátil,1832.28,completado
+ORD-00369,2024-01-13,Camila Navarro Torres,España,Escritorio,226.75,devuelto
+ORD-00370,2025-03-06,Sofía Castro Díaz,España,Teclado,51.19,completado
+ORD-00371,2024-01-18,Mateo Martínez Castro,Colombia,Escritorio,758.62,completado
+ORD-00372,2025-02-11,Andrés Castro Castro,España,Ratón,22.64,completado
+ORD-00373,2025-02-15,Martín Silva Sánchez,Francia,Disco SSD,210.05,completado
+ORD-00374,2024-03-21,Laura Torres Díaz,España,Tablet,409.73,completado
+ORD-00375,2025-10-11,Diego Rodríguez Martínez,España,Teclado,47.83,completado
+ORD-00376,2024-09-01,Mateo Fernández Herrera,España,Monitor,221.13,completado
+ORD-00377,2024-02-26,Andrés Pérez Herrera,España,Silla ergonómica,316.40,completado
+ORD-00378,2025-12-19,Mateo Vargas López,México,Teclado,50.21,completado
+ORD-00379,2024-09-22,Julia Herrera Silva,Portugal,Webcam,60.03,completado
+ORD-00380,2024-01-31,Carmen Díaz López,Portugal,Auriculares,72.50,completado
+ORD-00381,2025-08-13,Hugo Ortega Herrera,Argentina,Disco SSD,109.75,completado
+ORD-00382,2025-08-03,Julia Herrera Silva,Portugal,Disco SSD,106.27,completado
+ORD-00383,2024-04-28,Carmen Ruiz Ortega,España,Monitor,458.51,completado
+ORD-00384,2024-02-17,Julia Rodríguez Herrera,Argentina,Portátil,1621.51,completado
+ORD-00385,2024-02-06,Gabriel Rodríguez Sánchez,España,Teclado,52.10,completado
+ORD-00386,2024-11-23,Sofía Castro Díaz,España,Silla ergonómica,298.98,completado
+ORD-00387,2024-02-23,Andrés Fernández Ruiz,Argentina,Webcam,59.06,completado
+ORD-00388,2025-04-21,Nicolás Sánchez Navarro,Chile,Portátil,2455.18,pendiente
+ORD-00389,2024-01-09,Nicolás Rodríguez Rodríguez,Colombia,Auriculares,77.65,completado
+ORD-00390,2025-01-12,Gabriel Pérez Herrera,Argentina,Auriculares,73.97,completado
+ORD-00771,2025/03/25,Valentina Castro Pérez,Portugal,Ratón,25.87,pendiente
+ORD-00391,2024-09-08,Julia Herrera Silva,Portugal,Ratón,24.45,completado
+ORD-00392,2025-12-11,Sofía Castro Díaz,España,Portátil,855.82,pendiente
+ORD-00393,2025-13-05,Sofía Sánchez Martínez,México,Portátil,1719.68,completado
+ORD-00394,2024-05-25,Laura Ortega Martínez,España,Ratón,26.00,completado
+ORD-00395,2025-12-18,Andrés Ruiz Gómez,México,Ratón,48.70,cancelado
+ORD-00396,,Javier Castro Pérez,España,Monitor,223.46,pendiente
+ORD-00397,fecha,Andrés Castro Castro,España,Tablet,448.72,completado
+ORD-00398,2024-11-30,Gabriel Gómez Rodríguez,Argentina,Webcam,113.16,completado
+ORD-00399,2025-08-21,Gabriel Ortega Morales,Colombia,Monitor,,completado
+ORD-00400,2025-07-02,Camila Morales Díaz,Chile,Escritorio,239.28,completado
+ORD-00401,2024-05-02,Nicolás Rodríguez Rodríguez,Colombia,Escritorio,234.00,completado
+ORD-00402,,Nicolás Sánchez Navarro,Chile,Auriculares,158.72,completado
+ORD-00403,2024-12-30,Sebastián Castro Rojas,España,Teclado,46.77,completado
+ORD-00404,2024-02-01,Andrés Castro Castro,España,Auriculares,,devuelto
+ORD-00405,2025-04-18,Paula Vargas Rodríguez,México,Disco SSD,102.19,completado
+ORD-00406,2024-08-15,Nicolás Rodríguez Rodríguez,Colombia,Monitor,234.62,completado
+ORD-00407,2024-03-27,Paula Herrera García,Francia,Webcam,61.40,completado
+ORD-00408,2025-10-23,Gabriel Castro Gómez,México,Monitor,208.31,completado
+ORD-00409,2024-02-21,Carmen Díaz López,Portugal,Webcam,61.44,completado
+ORD-00410,2025-03-12,Marta Silva Sánchez,Argentina,Silla ergonómica,305.41,completado
+ORD-00411,2024-06-01,Diego Rodríguez Morales,México,Teclado,48.25,completado
+ORD-00412,2025-07-17,Martín Ortega Herrera,Colombia,Ratón,24.27,completado
+ORD-00413,2025-06-22,Andrés Pérez Herrera,España,Silla ergonómica,296.64,completado
+ORD-00414,2025-12-31,Valentina Fernández Romero,México,Disco SSD,228.55,completado
+ORD-00415,2024-11-25,Laura Torres Díaz,España,Escritorio,245.23,completado
+ORD-00416,2024-10-14,Daniel Sánchez Pérez,España,Webcam,53.36,completado
+ORD-00417,2024-08-26,Valentina Fernández Romero,México,Disco SSD,107.65,devuelto
+ORD-00418,2024-02-27,Camila Herrera Ortega,Colombia,Ratón,25.46,completado
+ORD-00419,2024-12-29,Sofía Ortega Herrera,Chile,Tablet,915.61,cancelado
+ORD-00921,2024-10-03,Gabriel Pérez Herrera,Argentina,Escritorio,247.71,completado
+ORD-00420,2025-12-15,Valentina Fernández Romero,México,Teclado,49.35,completado
+ORD-00421,2025-07-30,Martín García Torres,México,Webcam,174.26,cancelado
+ORD-00422,2024-02-08,Paula Ortega Sánchez,Francia,Escritorio,230.66,completado
+ORD-00423,2024-12-05,Diego Sánchez López,Francia,Ratón,24.20,cancelado
+ORD-00424,2024-11-27,Diego Ortega Navarro,Colombia,Teclado,46.24,completado
+ORD-00425,2025-01-08,Carmen Martínez Ruiz,Argentina,Teclado,102.49,DEVUELTO
+ORD-00426,2024-11-26,Gabriel Pérez Herrera,Argentina,Silla ergonómica,303.20,completado
+ORD-00427,2025-10-26,Carmen Ruiz Ortega,España,Silla ergonómica,666.14,completado
+ORD-00428,2024-12-31,Mateo Navarro Sánchez,México,Disco SSD,113.29,completado
+ORD-00429,2024-00-10,Marta Vargas Ruiz,Colombia,Teclado,50.40,completado
+ORD-00430,2025-08-04,Mateo Ruiz Romero,España,Tablet,471.06,completado
+ORD-00431,2025-05-23,Martín Morales López,México,Tablet,442.19,completado
+ORD-00432,2025-10-13,Nicolás Gómez Romero,México,Ratón,23.60,cancelado
+ORD-00433,2024-09-12,Andrés Pérez Herrera,España,Webcam,55.45,completado
+ORD-00434,2025-03-24,Gabriel Pérez Herrera,Argentina,Monitor,207.75,completado
+ORD-00435,2025-07-13,Tomás Castro Gómez,España,Silla ergonómica,305.22,completado
+ORD-00436,2024-06-15,Paula Navarro Castro,España,Tablet,450.38,completado
+ORD-00437,2024-04-17,Nicolás Romero Rojas,México,Portátil,852.08,completado
+ORD-00438,2024-04-05,Daniel Herrera Rodríguez,España,Silla ergonómica,290.69,completado
+ORD-00439,2025-10-31,Tomás López Fernández,México,Escritorio,240.21,completado
+ORD-00440,2024-07-13,Sebastián Martínez Rodríguez,España,Teclado,47.39,completado
+ORD-00441,2024-08-31,Lucía López Sánchez,España,Disco SSD,102.70,completado
+ORD-00442,2025-01-04,Hugo López Rojas,Colombia,Disco SSD,201.22,completado
+ORD-00443,2024-07-30,Andrés Pérez Herrera,España,Tablet,410.63,completado
+ORD-00910,2024-03-31,Andrés Castro Castro,España,Teclado,49.49,completado
+ORD-00444,2025-02-11,Gabriel Pérez Herrera,Argentina,Monitor,210.07,completado
+ORD-00445,2024-07-08,Sebastián Navarro Navarro,España,Auriculares,77.55,completado
+ORD-00446,2025-04-21,Gabriel Pérez Herrera,Argentina,Teclado,46.88,completado
+ORD-00447,2025-11-14,Paula Rodríguez Gómez,México,Tablet,454.76,completado
+ORD-00448,2024-08-20,Mateo Fernández Herrera,  España ,Disco SSD,110.47,completado
+ORD-00449,2025-05-01,Paula Rodríguez Sánchez,Colombia,Disco SSD,106.86,completado
+ORD-00450,2024-02-05,Diego Sánchez López,Francia,Auriculares,81.80,completado
+ORD-00451,2024-05-03,Sebastián Silva Herrera,España,Tablet,445.88,cancelado
+ORD-00452,2024-05-09,Isabel Romero Castro,Chile,Teclado,152.88,completado
+ORD-00453,N/A,Andrés Fernández Ruiz,Argentina,Silla ergonómica,326.46,pendiente
+ORD-00454,19-07-2025,Gabriel Castro Gómez,México,Monitor,225.21,completado
+ORD-00455,2025-12-18,Gabriel Pérez Herrera,Argentina,Escritorio,449.12,completado
+ORD-00456,2025-08-03,Laura Ortega Martínez,España,Silla ergonómica,294.26,completado
+ORD-00457,2024-04-13,Nicolás Rodríguez Rodríguez,Colombia,Monitor,450.86,completado
+ORD-00458,2025-11-01,Sebastián Díaz López,México,Webcam,110.88,completado
+ORD-00459,2025-09-25,Martín Navarro Silva,España,Portátil,863.44,completado
+ORD-00460,2025-12-08,Mateo Martínez Castro,Colombia,Portátil, ,completado
+ORD-00461,2024-11-06,Nicolás Gómez Romero,México,Auriculares,142.68,completado
+ORD-00462,2024-11-03,Paula Romero Rojas,Chile,Monitor,641.79,devuelto
+ORD-00463,2025-10-23,Isabel García Díaz,España,Webcam, ,completado
+ORD-00464,2025-01-17,Isabel García Díaz,España,Silla ergonómica,323.44,pendiente
+ORD-00465,2025-02-17,Laura Morales Pérez,Argentina,Teclado,50.22,completado
+ORD-00466,2024-07-24,Paula Torres Martínez,Chile,Tablet,417.08,pendiente
+ORD-00467,2024/07/22,Elena Martínez López,España,Escritorio,237.56,completado
+ORD-00468,2025-11-28,Paula Herrera García,Francia,Disco SSD,113.19,completado
+ORD-00469,2025-04-30,Gabriel Pérez Herrera,Argentina,Tablet,468.79,completado
+ORD-00470,2025-12-06,Gabriel Pérez Herrera,Argentina,Teclado,93.69,completado
+ORD-00471,2024-08-07,Andrés Castro Castro,España,Portátil,886.27,pendiente
+ORD-00472,2024-01-21,Mateo Fernández Herrera,España,Ratón,23.94,PENDIENTE
+ORD-00473,2024-06-26,Tomás Castro Gómez,España,Portátil,826.94,completado
+ORD-00474,2025-12-30,Ana Morales García,España,Auriculares,82.27,devuelto
+ORD-00475,2025-04-15,Mateo Fernández Herrera,España,Silla ergonómica,655.70,completado
+ORD-00476,2024-04-14,Julia Castro Herrera,México,Disco SSD,209.19,completado
+ORD-00477,2024-10-16,Valentina Ruiz López,Chile,Webcam,58.35,completado
+ORD-00478,2024-11-28,Camila Morales Díaz,Chile,Monitor,215.60,pendiente
+ORD-00479,2024-09-03,Gabriel Gómez Rodríguez,Argentina,Auriculares,77.23,cancelado
+ORD-00480,23-05-2024,Nicolás Sánchez Navarro,Chile,Tablet,425.62,completado
+ORD-00481,2025-02-01,Mateo Fernández Herrera,España,Auriculares,76.06,COMPLETADO
+ORD-00482,2025-12-31,Marta Silva Sánchez,Argentina,Tablet,854.42,completado
+ORD-00483,2025-06-03,Laura Pérez Morales,Portugal,Escritorio,498.39,completado
+ORD-00484,2024-05-11,Daniel Herrera Rodríguez,España,Disco SSD,99.70,completado
+ORD-00485,2025-11-27,Mateo Romero Morales,Francia,Disco SSD,"202,19",cancelado
+ORD-00486,2024-11-10,Mateo Fernández Herrera,España,Ratón,25.19,completado
+ORD-00487,2024-04-30,Sebastián Martínez Herrera,Francia,Webcam,55.70,completado
+ORD-00488,2025-04-28,Sebastián Díaz López,México,Tablet,445.90,cancelado
+ORD-00489,2024-06-03,Julia Herrera Silva,Portugal,Silla ergonómica,"306,87",completado
+ORD-00490,2025-04-13,Diego Ortega Navarro,Colombia,Silla ergonómica,989.47,completado
+ORD-00491,2025-10-08,Sebastián Castro Rojas,España,Teclado,97.12,devuelto
+ORD-00492,2024-06-21,Gabriel Pérez Herrera,Argentina,Portátil,845.99,completado
+ORD-00493,2025-03-15,Daniel Díaz Sánchez,Chile,Monitor,221.00,completado
+ORD-00494,2025-01-17,Tomás Castro Gómez,España,Silla ergonómica,312.64,devuelto
+ORD-00495,2025-10-03,Sebastián Navarro Navarro,España,Disco SSD,109.16,completado
+ORD-00496,2025-05-30,Diego Ruiz Romero,Portugal,Webcam,54.01,completado
+ORD-00497,2025-06-16,Daniel Herrera Herrera,Portugal,Portátil,848.32,completado
+ORD-00498,2025-01-02,Gabriel Pérez Herrera,Argentina,Teclado,51.66,completado
+ORD-00499,2024-05-14,Daniel Herrera Fernández,México,Silla ergonómica,297.83,completado
+ORD-00500,2025-10-28,Andrés Castro Castro,España,Disco SSD,104.09,completado
+ORD-00786,2025-05-25,Ana Martínez García,Francia,Auriculares,77.00,completado
+ORD-00501,2025-08-31,Gabriel Pérez Herrera,Argentina,Auriculares,156.97,devuelto
+ORD-00502,2025-03-30,Mateo Fernández Herrera,España,Portátil,824.71,completado
+ORD-00503,2025-12-03,Lucía Herrera Gómez,España,Escritorio,231.78,completado
+ORD-00504,2025-09-12,Gabriel Pérez Herrera,Argentina,Monitor,215.37,completado
+ORD-00505,2024-10-16,Hugo López Rojas,Colombia,Monitor,227.32,completado
+ORD-00506,2025-06-19,Camila Morales Díaz,Chile,Ratón,25.32,devuelto
+ORD-00507,2025-05-23,Gabriel Pérez Herrera,Argentina,Silla ergonómica, ,cancelado
+ORD-00508,2025-11-18,Mateo Martínez Castro,Colombia,Escritorio,224.20,completado
+ORD-00509,2024-04-02,Camila Morales Díaz,Chile,Tablet,414.14,completado
+ORD-00510,2025-04-12,Andrés Castro Castro,España,Monitor,456.47,devuelto
+ORD-00511,2024-02-10,Gabriel Pérez Herrera,Argentina,Escritorio,254.47,pendiente
+ORD-00583,2025-07-16,Marta Castro Fernández,Colombia,Portátil,1869.66,completado
+ORD-00512,2024-02-16,Gabriel Pérez Herrera,Argentina,Webcam,,completado
+ORD-00513,2025-09-28,Carmen Díaz López,Portugal,Teclado,,completado
+ORD-00514,2025-02-14,Mateo Sánchez Gómez,España,Webcam,109.44,completado
+ORD-00515,2025-03-07,Isabel Vargas Díaz,Argentina,Silla ergonómica,309.98,completado
+ORD-00516,2024-06-12,Nicolás Romero Rojas,México,Monitor,231.05,completado
+ORD-00517,2024-07-04,Sebastián Torres Fernández,México,Escritorio,498.88,completado
+ORD-00518,2024/05/13,Nicolás Rodríguez Rodríguez,Colombia,Tablet,450.20,completado
+ORD-00519,2025-11-01,Julia Herrera Silva,Portugal,Silla ergonómica,290.13,completado
+ORD-00520,2025-08-01,Mateo Martínez Castro,Colombia,Disco SSD,215.06,completado
+ORD-00521,2025-09-25,Sofía Vargas Vargas,Portugal,Webcam,59.19,completado
+ORD-00522,2025-10-18,Mateo Fernández Herrera,ESPAÑA,Ratón,24.89,completado
+ORD-00523,2024-01-12,Paula Rodríguez Sánchez,Colombia,Disco SSD,216.24,completado
+ORD-00524,2024-03-17,Carmen Ruiz Ortega,España,Escritorio,513.15,completado
+ORD-00525,2024-08-16,Gabriel Pérez Herrera,Argentina,Webcam,160.64,completado
+ORD-00526,2025-08-09,Gabriel Pérez Herrera,Argentina,Ratón,24.07,completado
+ORD-00527,2025-10-31,Sebastián Castro Rojas,España,Escritorio,260.73,completado
+ORD-00528,2024-04-03,Hugo López Rojas,Colombia,Portátil,809.12,completado
+ORD-00529,2025-11-01,Tomás Castro Gómez,España,Auriculares,155.53,completado
+ORD-00530,2025-04-10,Sofía Sánchez Martínez,México,Webcam,120.65,completado
+ORD-00531,2025-04-08,Nicolás Rodríguez Rodríguez,Colombia,Tablet,448.36,completado
+ORD-00532,10/10/2025,Nicolás Rodríguez Rodríguez,Colombia,Ratón,23.74,devuelto
+ORD-00533,2024-06-17,Gabriel Pérez Herrera,Argentina,Disco SSD,99.84,completado
+ORD-00534,2024-07-11,Paula Herrera García,Francia,Silla ergonómica,316.33,completado
+ORD-00535,2024-12-12,Paula Vargas Rodríguez,México,Ratón,25.33,completado
+ORD-00536,2025-04-13,Hugo López Rojas,Colombia,Tablet,464.16,completado
+ORD-00537,2024-02-19,Sofía Vargas Vargas,Portugal,Teclado,134.83,completado
+ORD-00538,2024-06-30,Hugo Pérez Castro,México,Tablet,438.34,completado
+ORD-00539,2025-09-12,Daniel Ortega Herrera,Francia,Teclado,49.83,cancelado
+ORD-00540,2025-12-10,Julia López Fernández,Colombia,Silla ergonómica,316.24,completado
+ORD-00541,2024-05-16,Gabriel Pérez Herrera,Argentina,Webcam,171.32,completado
+ORD-00542,2024-11-17,Martín Morales López,México,Disco SSD,109.57,completado
+ORD-00543,2024-10-24,Sofía Castro Díaz,España,Ratón,24.74,completado
+ORD-00544,2024-07-01,Sofía Castro Díaz,  España ,Teclado,149.33,completado
+ORD-00545,2025-07-29,Mateo Martínez Castro,Colombia,Webcam,59.83,completado
+ORD-00546,2025-06-30,Marta Rojas Fernández,Francia,Silla ergonómica,329.87,completado
+ORD-00547,2024-05-28,Paula Silva Gómez,España,Portátil,812.51,completado
+ORD-00548,2024-10-20,Andrés Castro Castro,España,Auriculares,146.01,completado
+ORD-00549,2025-07-08,Carmen Martínez Ruiz,Argentina,Portátil,848.90,completado
+ORD-00550,2025-07-29,Nicolás Sánchez Navarro,Chile,Monitor,229.30,pendiente
+ORD-00551,2025-12-13,Mateo Vargas López,México,Disco SSD,106.45,completado
+ORD-00552,2025-12-02,Mateo Fernández Herrera,España,Silla ergonómica,332.88,completado
+ORD-00553,2025-03-29,Lucía López Sánchez,España,Portátil,836.49,pendiente
+ORD-00554,2025-09-09,Sebastián Torres Fernández,México,Webcam,115.88,completado
+ORD-00555,2025-11-30,Mateo Romero Morales,Francia,Ratón,23.07,completado
+ORD-00556,2024-10-12,Tomás Castro Gómez,España,Disco SSD,98.76,completado
+ORD-00557,2025-04-22,Carmen Díaz López,Portugal,Tablet,808.96,completado
+ORD-00558,2025-10-02,Carmen Ruiz Ortega,España,Teclado,98.76,completado
+ORD-00559,2024-03-15,Mateo Fernández Herrera,España,Escritorio,489.30,completado
+ORD-00560,2025-06-01,Gabriel Pérez Herrera,argentina,Ratón,73.06,completado
+ORD-00565,2024-10-16,Nicolás Rodríguez Rodríguez,Colombia,Monitor,224.66,completado
+ORD-00561,2024-08-06,Laura Torres Díaz,España,Silla ergonómica,297.68,completado
+ORD-00562,2025/06/27,Gabriel Pérez Herrera,Argentina,Auriculares,80.02,completado
+ORD-00563,2024-09-03,Lucía Pérez Torres,Portugal,Portátil,855.76,cancelado
+ORD-00564,2024-11-24,Martín Ortega Herrera,Colombia,Tablet,406.79,completado
+ORD-00565,2024-10-16,Nicolás Rodríguez Rodríguez,Colombia,Monitor,224.66,completado
+ORD-00566,2025-05-13,Laura Morales Pérez,Argentina,Webcam,57.60,completado
+ORD-00567,2024-04-08,Sebastián Romero Ortega,México,Ratón,22.72,completado
+ORD-00568,2024-08-03,Sofía Vargas Vargas,Portugal,Disco SSD,108.35,completado
+ORD-00569,N/A,Nicolás Rodríguez Rodríguez,Colombia,Silla ergonómica,593.87,pendiente
+ORD-00570,2025-12-03,Mateo Vargas López,México,Silla ergonómica,,completado
+ORD-00571,2024-07-01,Javier Castro Pérez,España,Webcam,53.75,completado
+ORD-00572,2025-02-21,Lucía Pérez Torres,Portugal,Tablet,930.91,completado
+ORD-00573,2024-05-01,Martín Silva Sánchez,Francia,Silla ergonómica,305.74,completado
+ORD-00574,2024-02-16,Mateo Fernández Herrera,España,Tablet,454.34,completado
+ORD-00575,04/11/2024,Andrés Castro Castro,España,Disco SSD,110.97,completado
+ORD-00576,2024-00-10,Gabriel Pérez Herrera,Argentina,Escritorio,254.81,completado
+ORD-00577,2025-07-12,Laura Pérez Morales,Portugal,Teclado,50.87,completado
+ORD-00578,2025-10-25,Martín Vargas Torres,Chile,Auriculares,81.93,completado
+ORD-00579,2024-02-12,Sofía Ortega Herrera,Chile,Disco SSD,200.82,completado
+ORD-00580,2024-08-03,Martín Morales López,México,Disco SSD,99.49,completado
+ORD-00581,2025-06-08,Sebastián Silva Herrera,España,Webcam,61.11,completado
+ORD-00582,2024-07-04,Diego Fernández Sánchez,México,Tablet,834.38,completado
+ORD-00583,2025-07-16,Marta Castro Fernández,Colombia,Portátil,1869.66,completado
+ORD-00584,2024-07-21,Lucía López Gómez,Chile,Auriculares,74.07,completado
+ORD-00585,2024-08-28,Julia Herrera Silva,Portugal,Webcam,59.04,completado
+ORD-00586,2025-09-23,Martín Ortega Herrera,Colombia,Ratón,24.09,completado
+ORD-00587,2024-11-19,Mateo Martínez Castro,Colombia,Teclado,47.64,devuelto
+ORD-00588,2025-10-18,Daniel Herrera Rodríguez,España,Webcam,55.06,completado
+ORD-00589,2025-05-06,Paula Rodríguez Sánchez,Colombia,Teclado,47.39,completado
+ORD-00590,2025-10-23,Gabriel Pérez Herrera,Argentina,Auriculares,72.39,completado
+ORD-00591,2025-10-03,Paula Romero Rojas,Chile,Teclado,92.76,completado
+ORD-00592,2025-08-18,Andrés Castro Castro,España,Portátil,1788.55,completado
+ORD-00593,2025-07-10,Nicolás Rodríguez Rodríguez,Colombia,Ratón,48.94,cancelado
+ORD-00594,2025-08-26,Laura Torres Díaz,España,Teclado,46.58,completado
+ORD-00595,2025-01-07,Gabriel Pérez Herrera,Argentina,Escritorio,227.48,completado
+ORD-00596,2024-05-23,Mateo Fernández Herrera,España,Tablet,455.10,completado
+ORD-00016,2025-04-26,Andrés Castro Castro,España,Portátil,902.06,completado
+ORD-00597,2025-05-10,Daniel Sánchez Pérez,España,Tablet,469.28,cancelado
+ORD-00598,2024-08-27,Andrés Castro Castro,España,Escritorio,233.97,completado
+ORD-00599,2024-02-17,Diego Rodríguez Martínez,España,Webcam,61.22,completado
+ORD-00600,2024-10-07,Mateo Fernández Herrera,España,Monitor,224.01,pendiente
+ORD-00601,2025-01-22,Gabriel López Castro,España,Disco SSD,104.26,completado
+ORD-00602,2024-08-16,Mateo Fernández Herrera,España,Monitor,219.03,completado
+ORD-00603,2025-09-10,Gabriel Pérez Herrera,Argentina,Webcam,57.37,completado
+ORD-00604,2025-10-20,Sebastián Herrera Romero,España,Escritorio,226.98,completado
+ORD-00605,2024-05-01,Carmen Martínez Ruiz,Argentina,Teclado,50.28,completado
+ORD-00606,2025-05-05,Hugo López Rojas,Colombia,Webcam,57.36,completado
+ORD-00607,2025-08-10,Martín García Torres,México,Silla ergonómica,289.16,completado
+ORD-00608,2024-02-27,Carmen Díaz López,Portugal,Disco SSD,107.46,completado
+ORD-00609,2025-07-31,Sofía Castro Díaz,España,Disco SSD,323.70,completado
+ORD-00610,2025-09-13,Sebastián Herrera López,España,Auriculares,221.00,devuelto
+ORD-00611,2024-05-26,Sebastián Díaz López,México,Teclado,47.98,completado
+ORD-00612,2024-06-20,Paula García Pérez,México,Teclado,48.73,completado
+ORD-00613,2025-01-22,Gabriel Pérez Herrera,Argentina,Escritorio,226.67,completado
+ORD-00614,2025-12-01,Camila Morales Díaz,Chile,Ratón,25.81,completado
+ORD-00615,2025-09-06,Carmen Martínez Ruiz,Argentina,Monitor,237.07,completado
+ORD-00616,2025-11-06,Nicolás Rodríguez Rodríguez,Colombia,Disco SSD,199.25,completado
+ORD-00617,2025-10-26,Martín Navarro Silva,España,Portátil,1827.18,completado
+ORD-00618,2025-05-08,Hugo Martínez Vargas,España,Portátil,"866,94",completado
+ORD-00619,2025-12-14,Gabriel Pérez Herrera,Argentina,Tablet,930.49,completado
+ORD-00620,2024-03-26,Hugo Martínez Vargas,España,Auriculares,73.86,completado
+ORD-00621,2024/01/08,Sebastián Herrera López,España,Silla ergonómica,287.36,completado
+ORD-00622,2024-11-19,Camila Sánchez Martínez,Francia,Portátil,836.80,completado
+ORD-00623,2025-07-02,Camila Morales Díaz,Chile,Silla ergonómica,299.24,completado
+ORD-00624,2024-07-27,Gabriel Pérez Herrera,Argentina,Auriculares,227.43,completado
+ORD-00625,2025-05-10,Nicolás Rodríguez Rodríguez,Colombia,Escritorio,244.98,completado
+ORD-00626,2024-05-21,Gabriel Pérez Herrera,Argentina,Webcam,113.25,pendiente
+ORD-00627,2024-06-14,Mateo Fernández Herrera,Espana,Ratón,25.02,completado
+ORD-00628,2025-12-01,Julia Rodríguez Herrera,Argentina,Webcam,117.07,completado
+ORD-00629,2025-04-27,Daniel Díaz Sánchez,Chile,Portátil,1840.23,cancelado
+ORD-00630,2025-09-15,Isabel Fernández Martínez,Chile,Monitor,218.84,completado
+ORD-00631,2025-12-29,Gabriel Rodríguez Sánchez,España,Silla ergonómica,312.03,devuelto
+ORD-00632,2024-07-25,Andrés Castro Castro,España,Teclado,48.20,pendiente
+ORD-00633,2025-09-05,Sofía Castro Díaz,España,Disco SSD,98.65,completado
+ORD-00634,2024-09-01,Mateo Martínez Castro,Colombia,Tablet,406.53,completado
+ORD-00635,2024-12-27,Tomás Castro Gómez,España,Monitor,698.65,completado
+ORD-00636,2024-03-11,Hugo López Rojas,Colombia,Ratón,25.16,cancelado
+ORD-00637,2024-10-10,Lucía López Gómez,Chile,Disco SSD,,completado
+ORD-00638,2024-09-24,Tomás Castro Gómez,España,Escritorio,491.15,completado
+ORD-00639,2024-04-29,Julia Rodríguez Herrera,Argentina,Disco SSD,102.91,pendiente
+ORD-00640,2025-12-11,Sofía Vargas Vargas,Portugal,Disco SSD,215.00,completado
+ORD-00641,2025-04-14,Gabriel Pérez Herrera,Argentina,Escritorio,504.78,completado
+ORD-00642,2025-01-26,Sebastián Romero Ortega,México,Portátil,"843,87",completado
+ORD-00643,2024-12-27,Valentina Fernández Romero,México,Ratón,47.90,completado
+ORD-00644,2025-11-20,Ana Ortega Rodríguez,Chile,Auriculares,72.20,completado
+ORD-00645,2024-12-28,Gabriel Pérez Herrera,Argentina,Disco SSD,317.68,completado
+ORD-00646,2024-07-13,Marta Silva Sánchez,Argentina,Teclado,150.07,completado
+ORD-00647,2024-07-26,Diego Ortega Navarro,Colombia,Ratón,46.36,pendiente
+ORD-00648,2024-03-21,Paula Ortega Sánchez,Francia,Webcam, ,completado
+ORD-00649,2024-02-13,Mateo Fernández Herrera,España,Tablet,461.82,pendiente
+ORD-00650,2025-08-11,Gabriel Pérez Herrera,Argentina,Webcam,61.82,pendiente
+ORD-00313,2025-08-31,Nicolás Rodríguez Rodríguez,Colombia,Webcam,60.29,completado
+ORD-00651,2025-08-13,Julia Herrera Silva,Portugal,Disco SSD,101.73,completado
+ORD-00652,2025-05-29,Laura Ortega Martínez,España,Silla ergonómica,312.98,completado
+ORD-00653,2025-06-14,Sebastián Castro Rojas,España,Teclado,45.81,completado
+ORD-00654,2024-04-13,Mateo Martínez Castro,Colombia,Portátil,860.27,completado
+ORD-00655,2024-10-02,Martín Ortega Herrera,Colombia,Auriculares,74.21,completado
+ORD-00656,2025-03-05,Martín Ortega Herrera,Colombia,Webcam,56.85,completado
+ORD-00657,2024-05-14,Gabriel Pérez Herrera,Argentina,Silla ergonómica,295.71,devuelto
+ORD-00658,2025-07-22,Mateo Martínez Castro,Colombia,Monitor,233.72,completado
+ORD-00659,2025-04-29,Gabriel Pérez Herrera,Argentina,Teclado,100.88,pendiente
+ORD-00660,2025-10-07,Daniel Sánchez Pérez,España,Escritorio,257.46,  completado 
+ORD-00939,2024-04-26,Nicolás Rodríguez Rodríguez,Colombia,Teclado,140.09,completado
+ORD-00661,2025-08-04,Mateo Romero Morales,Francia,Escritorio,245.10,completado
+ORD-00662,2025-05-02,Camila Fernández Navarro,México,Teclado,,pendiente
+ORD-00663,2025-07-24,Camila Fernández Navarro,México,Webcam,56.29,cancelado
+ORD-00664,2025-11-26,Gabriel Castro Gómez,México,Portátil,856.44,devuelto
+ORD-00665,2024-10-18,Diego Ortega Navarro,Colombia,Tablet,440.36,completado
+ORD-00666,2024-03-21,Mateo Fernández Herrera,España,Escritorio,481.59,completado
+ORD-00667,2024-12-11,Gabriel Pérez Herrera,Argentina,Teclado,99.41,completado
+ORD-00668,2024-06-14,Martín Ortega Herrera,Colombia,Silla ergonómica,581.03,completado
+ORD-00669,2025-02-08,Gabriel Pérez Herrera,Argentina,Auriculares,78.27,completado
+ORD-00670,2025-04-06,Isabel Rojas Navarro,España,Webcam,57.71,completado
+ORD-00671,2024-09-14,Diego Fernández Sánchez,México,Portátil,840.74,cancelado
+ORD-00672,2024-04-07,Mateo Martínez Castro,Colombia,Monitor,219.74,completado
+ORD-00673,2025-06-20,Sebastián Herrera López,España,Disco SSD,110.70,completado
+ORD-00674,2025-02-03,Andrés Navarro Gómez,España,Auriculares,72.10,completado
+ORD-00675,2025-06-23,Elena Martínez López,España,Auriculares, ,pendiente
+ORD-00676,2025-05-02,Andrés Castro Castro,España,Webcam,111.96,completado
+ORD-00677,2025-12-15,Sebastián Díaz Morales,Colombia,Auriculares,72.70,completado
+ORD-00678,2025-07-31,Martín García Torres,México,Escritorio,247.85,completado
+ORD-00679,2025-07-06,Martín Vargas Torres,Chile,Disco SSD,103.78,completado
+ORD-00680,2024-11-06,Andrés Rojas Díaz,Chile,Auriculares,74.18,completado
+ORD-00681,2024-01-09,Laura Ortega Martínez,España,Teclado,48.42,completado
+ORD-00682,2024-10-26,Julia Herrera Silva,Portugal,Escritorio,252.71,completado
+ORD-00683,2025-07-28,Nicolás Romero Rojas,México,Disco SSD,104.83,completado
+ORD-00684,2024-03-22,Elena Martínez López,España,Silla ergonómica,"595,31",completado
+ORD-00685,2024-10-18,Elena García Navarro,Argentina,Tablet,,completado
+ORD-00686,2024-07-05,Laura Pérez Morales,Portugal,Auriculares,,completado
+ORD-00687,2025-09-29,Camila Morales Díaz,Chile,Escritorio,234.26,completado
+ORD-00688,2024-07-09,Gabriel Pérez Herrera,Argentina,Teclado,48.91,devuelto
+ORD-00689,2024-08-26,Gabriel Pérez Herrera,argentina,Teclado,50.35,completado
+ORD-00867,2024-12-19,Isabel García Díaz,España,Teclado,50.41,completado
+ORD-00690,2025-05-25,Andrés Castro Castro,España,Ratón,23.57,devuelto
+ORD-00691,2024-05-29,Julia Castro Herrera,México,Portátil,922.85,completado
+ORD-00692,2024-09-13,Nicolás Rodríguez Rodríguez,Colombia,Monitor,212.34,pendiente
+ORD-00693,2025-01-29,Paula Navarro Castro,España,Monitor,691.95,completado
+ORD-00694,2024-04-06,Isabel García Díaz,España,Portátil,908.26,completado
+ORD-00695,2024-11-26,Tomás Gómez Vargas,Argentina,Escritorio,260.00,completado
+ORD-00696,2025-10-15,Mateo Romero Morales,Francia,Disco SSD,102.24,completado
+ORD-00697,2024-04-25,Gabriel Pérez Herrera,Argentina,Portátil,1676.94,completado
+ORD-00698,2024-05-02,Isabel Fernández Martínez,Chile,Portátil,"846,33",completado
+ORD-00699,2025-12-05,Elena López García,Argentina,Portátil,902.25,completado
+ORD-00700,2025-12-03,Gabriel Pérez Herrera,Argentina,Monitor,223.27,completado
+ORD-00701,2025-12-19,Sofía Castro Díaz,España,Portátil,896.02,completado
+ORD-00702,2025-10-22,Camila Morales Díaz,Chile,Escritorio,260.77,completado
+ORD-00703,2025-01-21,Nicolás Sánchez Navarro,Chile,Escritorio,224.90,completado
+ORD-00704,2024-10-28,Carmen Díaz López,Portugal,Portátil,868.10,completado
+ORD-00705,2025-04-24,Julia Herrera Silva,Portugal,Tablet,427.52,completado
+ORD-00706,2025-04-05,Paula Ortega Sánchez,Francia,Disco SSD,106.78,completado
+ORD-00707,2025-06-02,Gabriel López Castro,España,Webcam,59.97,completado
+ORD-00708,2025-09-27,Diego Fernández Sánchez,México,Portátil,858.20,completado
+ORD-00709,2025-11-30,Mateo Romero Morales,Francia,Disco SSD,202.41,completado
+ORD-00710,2024-11-25,Lucía López Sánchez,España,Tablet,431.70,completado
+ORD-00711,2024-07-01,Laura Ortega Martínez,España,Monitor,238.31,pendiente
+ORD-00712,2025-10-19,Diego Ortega Navarro,Colombia,Escritorio,225.29,pendiente
+ORD-00713,2024-02-20,Mateo Fernández Herrera,España,Disco SSD,107.75,completado
+ORD-00714,2025-11-02,Martín Navarro Silva,España,Monitor,237.74,completado
+ORD-00715,2025-01-04,Sebastián Martínez Rodríguez,España,Monitor,228.05,completado
+ORD-00716,2024-02-29,Sofía Fernández Torres,México,Silla ergonómica,650.21,pendiente
+ORD-00717,2024-03-20,Gabriel Ortega Morales,Colombia,Portátil,921.63,cancelado
+ORD-00718,2025-01-29,Tomás Castro Gómez,España,Monitor,214.04,completado
+ORD-00719,2025-07-25,Laura Ortega Martínez,España,Ratón,25.95,completado
+ORD-00720,2025-11-21,Hugo López Rojas,Colombia,Monitor,451.81,completado
+ORD-00721,2025-02-15,Mateo Fernández Herrera,España,Monitor,212.30,completado
+ORD-00722,2024-12-26,Mateo Fernández Herrera,España,Disco SSD,316.03,cancelado
+ORD-00723,2025-02-30,Lucía López Gómez,Chile,Webcam,113.50,completado
+ORD-00724,2025-01-19,Mateo Romero Morales,Francia,Tablet,440.85,completado
+ORD-00725,2025-02-10,Sofía Castro Díaz,España,Auriculares,76.46,completado
+ORD-00726,2024-11-05,Andrés Castro Castro,España,Auriculares,77.23,completado
+ORD-00727,2025-12-07,Tomás López Fernández,México,Ratón,44.98,pendiente
+ORD-00728,2024-06-07,Sofía Castro Díaz,España,Disco SSD,113.24,completado
+ORD-00729,2025-08-19,Julia Castro Herrera,México,Teclado,47.66,completado
+ORD-00730,2024-08-10,Elena Silva García,Francia,Auriculares,75.84,completado
+ORD-00731,2025-12-07,Mateo Romero Morales,Francia,Escritorio,254.94,completado
+ORD-00732,2025-08-13,Paula García Pérez,México,Monitor,216.42,completado
+ORD-00733,02-03-2025,Nicolás Rodríguez Rodríguez,Colombia,Webcam,60.33,cancelado
+ORD-00734,12/01/2024,Camila Torres Gómez,España,Ratón,25.58,completado
+ORD-00735,2025-07-06,Martín Silva Sánchez,Francia,Portátil,814.65,completado
+ORD-00736,2025-02-06,Gabriel Pérez Herrera,Argentina,Ratón,24.93,devuelto
+ORD-00737,2024-10-23,Nicolás Rodríguez Rodríguez,Colombia,Tablet,419.06,completado
+ORD-00738,2024-02-20,Carmen Martínez Ruiz,Argentina,Webcam,58.16,completado
+ORD-00739,2024-05-13,Gabriel López Castro,España,Silla ergonómica,324.13,completado
+ORD-00740,2024-07-19,Julia Fernández Sánchez,México,Ratón,24.85,completado
+ORD-00741,2025-03-16,Valentina Gómez Romero,Francia,Disco SSD,,completado
+ORD-00742,2025-01-09,Sofía Castro Díaz,España,Monitor,220.31,completado
+ORD-00743,2024-06-22,Gabriel Pérez Herrera,Argentina,Tablet,455.94,devuelto
+ORD-00744,27-08-2024,Martín Ortega Herrera,Colombia,Escritorio,240.55,completado
+ORD-00745,2025-09-27,Gabriel Pérez Herrera,Argentina,Monitor,207.97,cancelado
+ORD-00746,2024-04-23,Sebastián Díaz López,México,Auriculares,79.32,completado
+ORD-00747,2024-07-27,Julia Castro Herrera,México,Webcam,57.86,completado
+ORD-00748,2024-05-24,Nicolás Rodríguez Navarro,España,Disco SSD,110.03,completado
+ORD-00749,2024-02-14,Mateo Fernández Herrera,España,Silla ergonómica,318.85,completado
+ORD-00750,2024-02-24,Andrés Castro Castro,España,Ratón,49.44,completado
+ORD-00669,2025-02-08,Gabriel Pérez Herrera,Argentina,Auriculares,78.27,completado
+ORD-00751,2025-11-06,Sofía Ortega Herrera,Chile,Monitor,215.42,completado
+ORD-00752,2024-08-24,Camila Morales Díaz,Chile,Auriculares,157.59,devuelto
+ORD-00753,2025-09-03,Julia Rodríguez Herrera,argentina,Monitor,445.50,completado
+ORD-00754,2025-12-30,Diego Fernández Sánchez,México,Disco SSD,321.80,completado
+ORD-00755,2024-06-09,Elena Martínez López,España,Disco SSD,106.11,completado
+ORD-00756,2025-05-28,Mateo Martínez Castro,Colombia,Webcam,55.19,completado
+ORD-00757,2024-01-31,Andrés Castro Castro,España,Auriculares,163.30,cancelado
+ORD-00758,2025-11-03,Sofía Ortega Herrera,Chile,Ratón,25.76,completado
+ORD-00759,2025/10/02,Mateo Ruiz Romero,España,Disco SSD,324.34,completado
+ORD-00760,2025-09-11,Hugo López Rojas,Colombia,Tablet,469.47,completado
+ORD-00761,2025-12-01,Laura Torres Díaz,España,Ratón,24.58,pendiente
+ORD-00762,2024-05-18,Sebastián Castro Rojas,España,Auriculares,81.75,completado
+ORD-00763,2024-06-10,Sebastián Sánchez Romero,España,Teclado,49.14,completado
+ORD-00764,2024-05-29,Lucía Pérez Torres,Portugal,Monitor,234.94,completado
+ORD-00765,2025-10-14,Nicolás Rodríguez Rodríguez,Colombia,Silla ergonómica,904.85,cancelado
+ORD-00360,2024-00-10,Diego Ruiz Romero,Portugal,Monitor,209.62,completado
+ORD-00766,2025-09-18,Gabriel Pérez Herrera,argentina,Ratón,23.10,completado
+ORD-00767,2025-12-04,Martín Navarro Silva,ESPAÑA,Tablet,419.74,completado
+ORD-00768,2025-04-25,Andrés Herrera Castro,México,Escritorio,255.70,completado
+ORD-00769,2024-07-16,Gabriel Pérez Herrera,Argentina,Silla ergonómica,293.68,completado
+ORD-00770,2024-08-15,Hugo López Rojas,Colombia,Portátil,1874.47,completado
+ORD-00771,2025/03/25,Valentina Castro Pérez,Portugal,Ratón,25.87,pendiente
+ORD-00772,2025-03-13,Julia Herrera Silva,Portugal,Webcam,121.91,completado
+ORD-00773,2025-08-08,Andrés Castro Castro,Espana,Silla ergonómica,"305,96",completado
+ORD-00774,2024-02-13,Laura Ortega Martínez,España,Portátil,870.00,pendiente
+ORD-00775,2025-07-25,Elena López García,Argentina,Disco SSD,110.12,completado
+ORD-00776,2024-11-07,Nicolás Rodríguez Rodríguez,Colombia,Portátil,868.37,completado
+ORD-00777,2024-02-25,Gabriel Pérez Herrera,Argentina,Teclado,49.50,completado
+ORD-00778,2025-05-27,Sebastián Silva Herrera,España,Escritorio,481.94,completado
+ORD-00779,2025-04-06,Nicolás Rodríguez Rodríguez,Colombia,Disco SSD,104.86,completado
+ORD-00780,2024-11-27,Isabel Vargas Díaz,Argentina,Ratón,45.49,completado
+ORD-00781,2024-04-26,Sebastián Silva Herrera,España,Teclado,45.83,completado
+ORD-00782,2025-06-07,Martín Vargas Torres,Chile,Monitor,219.29,completado
+ORD-00783,2024-12-09,Daniel Díaz Sánchez,Chile,Disco SSD,110.66,completado
+ORD-00784,2025-12-30,Mateo Fernández Herrera,España,Teclado,45.99,completado
+ORD-00785,2024-05-14,Gabriel Pérez Herrera,Argentina,Escritorio,230.85,devuelto
+ORD-00786,2025-05-25,Ana Martínez García,Francia,Auriculares,77.00,completado
+ORD-00787,2025-05-02,Ana Martínez García,Francia,Escritorio,246.09,completado
+ORD-00788,2025-07-14,Isabel García Díaz,España,Tablet,420.58,completado
+ORD-00789,2025-10-30,Martín Silva Sánchez,Francia,Ratón,22.96,completado
+ORD-00790,2024-11-01,Carmen Martínez Ruiz,Argentina,Portátil,922.11,completado
+ORD-00791,2025-11-19,Andrés Pérez Herrera,España,Monitor,212.22,completado
+ORD-00792,2025-04-11,Mateo Fernández Herrera,España,Tablet,441.96,completado
+ORD-00793,12-01-2025,Gabriel Pérez Herrera,Argentina,Portátil,849.46,cancelado
+ORD-00794,2025-04-27,Paula García Pérez,México,Silla ergonómica,580.41,completado
+ORD-00368,2024-09-02,Gabriel Pérez Herrera,argentina,Portátil,1832.28,completado
+ORD-00795,2024-08-02,Mateo Martínez Castro,Colombia,Auriculares,76.00,COMPLETADO
+ORD-00796,2025-06-25,Martín Ortega Herrera,Colombia,Monitor,239.74,devuelto
+ORD-00797,2024-10-21,Julia Herrera Castro,Chile,Tablet,1411.58,completado
+ORD-00798,2024-12-28,Paula Silva Gómez,España,Auriculares,82.89,cancelado
+ORD-00799,2025-05-19,Martín Ortega Herrera,Colombia,Escritorio,247.70,pendiente
+ORD-00800,2024-01-02,Sebastián Martínez Herrera,Francia,Ratón,26.07,completado
+ORD-00918,2024-08-21,Nicolás Rodríguez Castro,Argentina,Webcam,54.07,completado
+ORD-00801,2025-09-22,Julia Castro Herrera,México,Monitor,213.22,devuelto
+ORD-00802,2024-08-05,Hugo López Rojas,Colombia,Webcam,60.23,completado
+ORD-00803,2024-11-03,Diego Ortega Navarro,Colombia,Auriculares,,completado
+ORD-00804,2025-02-09,Gabriel Pérez Herrera,Argentina,Portátil,854.04,completado
+ORD-00805,,Martín Ortega Herrera,Colombia,Portátil,1670.53,cancelado
+ORD-00806,2025-05-08,Julia Fernández Sánchez,México,Escritorio,496.43,completado
+ORD-00807,2025-02-27,Julia Castro Herrera,México,Disco SSD,211.32,cancelado
+ORD-00808,2024-11-19,Andrés Castro Castro,España,Disco SSD,109.95,completado
+ORD-00809,2024-12-28,Andrés Castro Castro,España,Tablet,457.95,completado
+ORD-00810,2025-07-01,Carmen Martínez Ruiz,Argentina,Portátil,859.70,pendiente
+ORD-00811,2024-11-11,Marta Rojas Fernández,Francia,Silla ergonómica,292.69,completado
+ORD-00812,2024/08/31,Gabriel Pérez Herrera,Argentina,Portátil,820.80,completado
+ORD-00813,2024-04-24,Paula Navarro Castro,España,Auriculares,74.68,completado
+ORD-00814,2024-01-26,Andrés Castro Castro,España,Ratón,48.13,completado
+ORD-00815,2025-06-20,Sebastián Silva Herrera,España,Teclado,51.82,completado
+ORD-00816,2025-11-23,Gabriel Pérez Herrera,Argentina,Monitor,476.64,devuelto
+ORD-00817,2025-06-18,Diego Rodríguez Martínez,España,Portátil,905.34,completado
+ORD-00818,2024-03-30,Gabriel Pérez Herrera,Argentina,Portátil,889.24,completado
+ORD-00819,2024-11-15,Sebastián Martínez Rodríguez,España,Monitor,228.74,completado
+ORD-00820,2024-10-10,Nicolás Rodríguez Rodríguez,Colombia,Ratón,23.13,completado
+ORD-00821,2024-04-27,Nicolás Rodríguez Rodríguez,Colombia,Monitor,211.51,completado
+ORD-00822,2025-07-16,Martín Pérez Vargas,francia,Disco SSD,106.97,completado
+ORD-00823,2024-11-14,Carmen Díaz Ortega,España,Auriculares,73.13,completado
+ORD-00824,2025-11-22,Gabriel Pérez Herrera,Argentina,Escritorio,225.18,completado
+ORD-00825,2025-09-02,Gabriel Rodríguez Sánchez,España,Monitor,212.25,cancelado
+ORD-00826,2024-07-21,Martín Silva Sánchez,Francia,Escritorio,235.77,completado
+ORD-00827,2025-04-21,Mateo Fernández Herrera,España,Disco SSD,113.19,completado
+ORD-00828,2025-10-21,Andrés Ruiz Gómez,México,Escritorio,235.69,completado
+ORD-00829,2025-09-23,Julia Castro Herrera,México,Ratón,68.84,completado
+ORD-00830,2024-11-28,Gabriel Pérez Herrera,Argentina,Teclado,49.89,completado
+ORD-01166,2025/07/26,Diego Rodríguez Martínez,España,Escritorio,229.96,completado
+ORD-00831,2024-06-23,Andrés Castro Castro,España,Escritorio,241.98,completado
+ORD-00832,2024-04-19,Gabriel Pérez Herrera,Argentina,Tablet,411.03,completado
+ORD-00833,2025-02-27,Mateo Fernández Herrera,España,Auriculares,75.85,completado
+ORD-00834,2024-12-14,Elena López García,Argentina,Teclado, ,completado
+ORD-00835,2024-12-16,Mateo Martínez Castro,Colombia,Silla ergonómica,615.86,completado
+ORD-00836,2025-05-13,Elena García Navarro,Argentina,Monitor,230.55,completado
+ORD-00837,2024-06-29,Martín Morales López,México,Webcam,60.37,completado
+ORD-00838,2025-01-23,Hugo López Rojas,  Colombia ,Tablet,458.93,completado
+ORD-00814,2024-01-26,Andrés Castro Castro,España,Ratón,48.13,completado
+ORD-00839,2025-08-17,Mateo Fernández Herrera,España,Portátil,919.28,cancelado
+ORD-00840,2025-04-08,Martín Vargas Torres,Chile,Portátil,1796.44,completado
+ORD-00841,2024-11-20,Hugo Díaz Morales,México,Tablet,417.95,completado
+ORD-00842,2024-12-18,Nicolás Rodríguez Rodríguez,Colombia,Auriculares,164.40,devuelto
+ORD-00843,2024-05-10,Marta Silva Sánchez,Argentina,Tablet,1293.97,pendiente
+ORD-00844,2025-07-27,Andrés Castro Castro,España,Disco SSD,294.34,pendiente
+ORD-00845,2025-12-20,Gabriel Pérez Herrera,Argentina,Auriculares,147.78,completado
+ORD-00846,2024-08-04,Martín Ruiz Navarro,Francia,Silla ergonómica,307.92,completado
+ORD-00847,2025-01-03,Julia Castro Torres,Colombia,Ratón,25.56,pendiente
+ORD-00848,2024-01-17,Carmen Ruiz Ortega,España,Teclado,45.45,completado
+ORD-00849,2024-05-20,Sebastián Martínez Herrera,Francia,Silla ergonómica,880.79,completado
+ORD-00850,2025-03-11,Hugo López Rojas,Colombia,Escritorio,500.15,completado
+ORD-00851,2024-12-29,Isabel Vargas Díaz,Argentina,Silla ergonómica,308.63,completado
+ORD-00852,2024-08-30,Hugo Martínez Vargas,España,Portátil,923.29,completado
+ORD-00853,2024-02-08,Gabriel Ortega Morales,Colombia,Disco SSD,98.65,completado
+ORD-00854,2024-03-22,Mateo Navarro Sánchez,México,Monitor,239.14,completado
+ORD-00855,2025-09-16,Mateo Ruiz Romero,España,Auriculares,72.03,completado
+ORD-00856,2025-08-16,Julia Castro Torres,Colombia,Monitor,224.62,completado
+ORD-00857,2025-04-09,Andrés Castro Castro,España,Webcam,53.20,completado
+ORD-00858,2024-10-28,Julia Castro Herrera,México,Webcam,61.60,completado
+ORD-00859,2025-07-31,Andrés Castro Castro,España,Tablet,453.06,completado
+ORD-00860,2024-10-25,Martín Silva Sánchez,Francia,Tablet,407.58,pendiente
+ORD-00861,2024-03-19,Martín Ruiz Navarro,Francia,Auriculares, ,pendiente
+ORD-00862,2024-09-20,Gabriel Pérez Herrera,Argentina,Teclado,46.97,completado
+ORD-00863,2025-11-05,Camila Navarro Torres,España,Teclado,100.88,completado
+ORD-00864,2024-07-04,Nicolás Sánchez Navarro,Chile,Auriculares,147.80,completado
+ORD-00865,2025-09-01,Sebastián Castro Rojas,España,Webcam,184.98,cancelado
+ORD-00866,2025-01-27,Carmen Martínez Ruiz,Argentina,Escritorio,479.05,completado
+ORD-00867,2024-12-19,Isabel García Díaz,España,Teclado,50.41,completado
+ORD-00868,2025-05-02,Gabriel López Castro,España,Monitor, ,completado
+ORD-00869,2025-02-03,Nicolás Gómez Romero,México,Disco SSD,109.28,completado
+ORD-00870,2025-04-04,Carmen Martínez Ruiz,Argentina,Silla ergonómica,331.47,completado
+ORD-00871,2025-06-28,Gabriel Pérez Herrera,Argentina,Disco SSD,98.77,  completado 
+ORD-00872,2024-10-06,Sofía Vargas Vargas,Portugal,Silla ergonómica,318.30,completado
+ORD-00873,2025-04-17,Gabriel Ortega Morales,Colombia,Monitor,226.17,completado
+ORD-00874,2025-11-24,Nicolás Rodríguez Navarro,España,Tablet,878.24,completado
+ORD-00875,2024-03-10,Daniel Sánchez Pérez,España,Disco SSD,,completado
+ORD-00876,2024-10-17,Camila Fernández Navarro,México,Monitor,218.17,completado
+ORD-00877,2025-11-03,Andrés Castro Castro,España,Tablet,467.31,cancelado
+ORD-00878,2024-05-02,Diego Ruiz Romero,Portugal,Tablet,451.79,completado
+ORD-00879,2025-08-02,Martín Navarro Silva,España,Silla ergonómica,330.16,pendiente
+ORD-00880,2025-04-23,Diego Fernández Sánchez,México,Monitor,214.80,completado
+ORD-00881,2025-03-13,Andrés Castro Castro,España,Escritorio,468.85,completado
+ORD-00882,2024-10-10,Mateo Fernández Herrera,España,Webcam,60.01,completado
+ORD-00883,2024-09-28,Gabriel Rodríguez Sánchez,España,Webcam,166.16,completado
+ORD-00884,2025-05-18,Andrés Castro Castro,España,Ratón,23.08,completado
+ORD-00885,2025-03-28,Laura Torres Díaz,España,Silla ergonómica,,completado
+ORD-00886,2025-04-01,Camila Morales Díaz,Chile,Monitor,,completado
+ORD-00887,2024-09-29,Julia Herrera Silva,Portugal,Portátil,2696.17,completado
+ORD-00888,2025-05-17,Gabriel Pérez Herrera,Argentina,Silla ergonómica,311.76,completado
+ORD-00889,2025-12-06,Hugo López Rojas,Colombia,Monitor,206.21,pendiente
+ORD-00890,2024-12-07,Julia Herrera Castro,Chile,Tablet,470.88,completado
+ORD-00891,2024-12-14,Hugo López Rojas,Colombia,Monitor,235.41,completado
+ORD-00892,2024-02-10,Javier Castro Pérez,España,Auriculares,73.19,devuelto
+ORD-00893,2025-10-07,Mateo Fernández Herrera,España,Auriculares,81.72,completado
+ORD-00894,2024-07-16,Julia Herrera Silva,Portugal,Escritorio,229.33,completado
+ORD-00895,2025-07-07,Valentina Gómez Romero,Francia,Ratón,22.65,completado
+ORD-00896,2024-12-13,Julia Herrera Silva,Portugal,Escritorio,674.14,completado
+ORD-00897,2025-10-31,Nicolás Rodríguez Rodríguez,Colombia,Portátil,837.64,completado
+ORD-00898,2024-03-14,Javier Castro Pérez,España,Disco SSD,107.57,completado
+ORD-00899,2024-02-16,Carmen Díaz Ortega,España,Portátil,"932,89",completado
+ORD-00900,2024-11-10,Mateo Fernández Herrera,España,Portátil,815.84,pendiente
+ORD-00901,2024-04-18,Camila Fernández Navarro,México,Tablet,443.91,completado
+ORD-00902,2025-03-12,Martín Morales López,México,Tablet,458.28,completado
+ORD-00903,2025-08-12,Paula Ortega Sánchez,Francia,Silla ergonómica,333.79,completado
+ORD-00904,2024-12-09,Gabriel Pérez Herrera,Argentina,Ratón,49.25,completado
+ORD-00905,2024-06-17,Gabriel Pérez Herrera,  Argentina ,Silla ergonómica,304.80,completado
+ORD-00906,2025-10-09,Sofía Castro Díaz,España,Portátil,"915,77",completado
+ORD-00907,2024-01-08,Nicolás Rodríguez Rodríguez,Colombia,Portátil,1639.97,completado
+ORD-00908,2025-05-02,Andrés Pérez Herrera,España,Tablet,864.27,completado
+ORD-00909,2024-06-27,Diego Rodríguez Martínez,España,Auriculares,75.98,completado
+ORD-00910,2024-03-31,Andrés Castro Castro,España,Teclado,49.49,completado
+ORD-00911,15/07/2024,Nicolás Rodríguez Rodríguez,Colombia,Webcam,58.04,COMPLETADO
+ORD-00912,N/A,Laura Ortega Martínez,España,Monitor,235.73,completado
+ORD-00081,2024-09-28,Nicolás Rodríguez Rodríguez,Colombia,Ratón,22.47,completado
+ORD-00913,2024-06-01,Julia Castro Herrera,México,Ratón,23.13,completado
+ORD-00914,2024-02-14,Tomás Castro Gómez,España,Escritorio,230.07,completado
+ORD-00915,2025-04-09,Gabriel Pérez Herrera,Argentina,Ratón,"23,66",completado
+ORD-00916,2025-05-11,Mateo Vargas López,México,Disco SSD,110.94,completado
+ORD-00917,2024-11-29,Andrés Castro Castro,España,Ratón,24.62,completado
+ORD-00918,2024-08-21,Nicolás Rodríguez Castro,Argentina,Webcam,54.07,completado
+ORD-00919,2025-04-27,Mateo Sánchez Gómez,España,Ratón,23.23,completado
+ORD-00920,2025-04-10,Andrés Castro Castro,España,Silla ergonómica,,completado
+ORD-00921,2024-10-03,Gabriel Pérez Herrera,Argentina,Escritorio,247.71,completado
+ORD-00922,2025-04-21,Carmen Díaz López,Portugal,Tablet,413.29,completado
+ORD-00923,2024-06-09,Daniel Ortega Herrera,Francia,Webcam,55.71,completado
+ORD-00924,2025-07-20,Martín Vargas Torres,Chile,Tablet,886.07,pendiente
+ORD-00925,2025-08-28,Andrés Pérez Herrera,España,Disco SSD,114.38,completado
+ORD-00926,2024-09-09,Julia Castro Herrera,Mexico,Portátil,908.37,completado
+ORD-00927,2024-06-01,Isabel Fernández Martínez,Chile,Ratón,49.24,cancelado
+ORD-00501,2025-08-31,Gabriel Pérez Herrera,Argentina,Auriculares,156.97,devuelto
+ORD-00928,2025-04-26,Sebastián Romero Ortega,México,Silla ergonómica,867.05,completado
+ORD-00929,2025-12-14,Julia López Fernández,Colombia,Silla ergonómica,310.03,pendiente
+ORD-00930,2025-12-10,Isabel Vargas Díaz,Argentina,Ratón, ,completado
+ORD-00788,2025-07-14,Isabel García Díaz,España,Tablet,420.58,completado
+ORD-00931,2024-04-02,Sofía Ortega Herrera,Chile,Teclado,46.70,completado
+ORD-00932,2025-08-20,Mateo Fernández Herrera,España,Teclado,51.33,completado
+ORD-00933,2025-01-14,Isabel Vargas Díaz,Argentina,Teclado,95.89,completado
+ORD-00934,2025-12-08,Mateo Martínez Castro,Colombia,Portátil,1637.27,completado
+ORD-00935,2025-09-19,Andrés Castro Castro,España,Silla ergonómica,641.00,completado
+ORD-00936,2024-02-26,Nicolás Rodríguez Rodríguez,Colombia,Monitor,217.63,completado
+ORD-00937,2025-01-09,Sebastián Sánchez Romero,España,Webcam,108.16,completado
+ORD-00938,2024-03-09,Andrés Castro Castro,España,Webcam,58.05,completado
+ORD-00939,2024-04-26,Nicolás Rodríguez Rodríguez,Colombia,Teclado,140.09,completado
+ORD-00940,2024-08-18,Mateo Sánchez Gómez,España,Tablet,902.87,completado
+ORD-00941,2024-03-05,Sebastián Romero Ortega,México,Disco SSD,102.63,completado
+ORD-00942,2025-12-27,Isabel Vargas Díaz,Argentina,Disco SSD,100.11,completado
+ORD-00943,2025-11-20,Paula Martínez Martínez,México,Auriculares,75.46,cancelado
+ORD-00944,2024-03-30,Nicolás Sánchez Navarro,Chile,Monitor,236.46,completado
+ORD-00945,2024-06-17,Sebastián Romero Ortega,México,Auriculares,216.04,completado
+ORD-00946,2025-10-04,Mateo Martínez Castro,Colombia,Escritorio,231.73,completado
+ORD-00947,2025-03-06,Hugo López Rojas,Colombia,Disco SSD,317.55,completado
+ORD-00948,2024-00-10,Mateo Fernández Herrera,España,Auriculares,71.36,pendiente
+ORD-00949,2025-10-23,Laura Ortega Martínez,España,Webcam,56.13,completado
+ORD-00950,2024-11-07,Julia Herrera Silva,Portugal,Disco SSD,210.76,completado
+ORD-00951,2025-05-10,Sebastián Romero Ortega,México,Auriculares,74.18,completado
+ORD-00952,2024-06-19,Gabriel Pérez Herrera,Argentina,Portátil,847.45,completado
+ORD-00953,2025-12-26,Daniel Díaz Sánchez,CHILE,Disco SSD,114.01,completado
+ORD-00954,2024-11-20,Mateo Fernández Herrera,España,Teclado,45.79,completado
+ORD-00955,2024-02-05,Isabel García Díaz,España,Webcam,58.08,completado
+ORD-00956,2024-06-15,Tomás Castro Gómez,España,Teclado,,completado
+ORD-00957,2024-05-28,Camila Torres Gómez,España,Portátil,876.45,cancelado
+ORD-00958,2025-06-03,Sofía Castro Díaz,  España ,Teclado,50.44,completado
+ORD-00959,2025-08-10,Mateo Navarro Sánchez,México,Escritorio,520.63,completado
+ORD-00960,2025-05-05,Nicolás Romero Rojas,México,Escritorio,228.29,cancelado
+ORD-00961,2025-09-24,Carmen Díaz López,Portugal,Disco SSD,98.51,pendiente
+ORD-00962,2024-07-18,Isabel Rojas Navarro,España,Monitor,226.99,completado
+ORD-00963,2025-04-01,Diego Ruiz Romero,Portugal,Auriculares,72.09,completado
+ORD-00964,2025-09-09,Sofía Vargas Vargas,Portugal,Disco SSD,106.12,completado
+ORD-00965,2025-03-13,Sofía Morales Sánchez,España,Webcam,59.44,completado
+ORD-00966,2025-04-01,Gabriel Pérez Herrera,Argentina,Auriculares,74.75,pendiente
+ORD-00967,2025-03-29,Andrés Pérez Herrera,España,Escritorio,239.62,completado
+ORD-00968,2025-08-24,Nicolás Sánchez Navarro,Chile,Silla ergonómica,306.92,completado
+ORD-00969,2024-12-09,Carmen Díaz Ortega,España,Auriculares,81.38,completado
+ORD-00970,2024-10-06,Tomás Castro Gómez,España,Silla ergonómica,,completado
+ORD-00971,2024-07-09,Lucía Martínez López,España,Tablet,826.64,PENDIENTE
+ORD-00972,2025-08-22,Gabriel Pérez Herrera,Argentina,Escritorio,254.96,completado
+ORD-00973,2024-06-06,Lucía Pérez Torres,Portugal,Escritorio,253.65,completado
+ORD-00974,2024-10-21,Sofía Vargas Vargas,Portugal,Escritorio,248.97,completado
+ORD-00975,2025-05-19,Julia Herrera Silva,Portugal,Ratón,25.27,devuelto
+ORD-00976,2024-09-21,Andrés Castro Castro,España,Webcam,58.11,completado
+ORD-00977,2024-01-18,Julia Castro Torres,Colombia,Monitor,231.28,pendiente
+ORD-00978,2025-12-10,Daniel Herrera Fernández,México,Portátil,871.27,completado
+ORD-00979,2024-12-30,Daniel Herrera Fernández,México,Auriculares,78.64,completado
+ORD-00980,2024-07-06,Gabriel Pérez Herrera,Argentina,Monitor,232.43,completado
+ORD-00981,2025-12-02,Martín Morales López,México,Teclado,51.44,completado
+ORD-00982,2024-05-27,Gabriel Ortega Morales,Colombia,Webcam,58.23,completado
+ORD-00983,2024-06-15,Laura Ortega Martínez,España,Webcam, ,completado
+ORD-00984,2025-07-26,Carmen Ruiz Ortega,España,Ratón,50.76,completado
+ORD-00985,2025-12-20,Paula Ortega Sánchez,Francia,Disco SSD,219.50,completado
+ORD-00986,2024-05-14,Camila Silva Vargas,España,Escritorio,456.91,cancelado
+ORD-00987,2025-03-28,Julia Fernández Sánchez,México,Auriculares,72.75,cancelado
+ORD-00988,2024-05-01,Martín Morales López,México,Webcam,55.80,completado
+ORD-00989,2024-08-02,Sebastián Castro Rojas,España,Teclado,47.21,completado
+ORD-00990,2025-03-17,Andrés Fernández Ruiz,Argentina,Monitor,232.71,  completado 
+ORD-00991,2024-09-16,Camila Morales Díaz,Chile,Disco SSD,105.77,completado
+ORD-00992,2025-09-08,Gabriel Pérez Herrera,Argentina,Portátil,1829.21,completado
+ORD-00993,2024-05-29,Sebastián Silva Herrera,España,Teclado,45.13,pendiente
+ORD-00994,2025-05-27,Sofía Fernández Torres,México,Tablet,414.91,completado
+ORD-00995,2025-08-15,Martín Ortega Herrera,Colombia,Disco SSD,99.72,completado
+ORD-00996,2025-07-04,Laura Ortega Martínez,España,Ratón,69.15,completado
+ORD-00997,2025-05-01,Mateo Romero Morales,Francia,Ratón,51.18,completado
+ORD-00998,2024-12-29,Martín García Torres,México,Escritorio,228.11,devuelto
+ORD-00999,2024-11-17,Hugo Martínez Vargas,España,Disco SSD,99.95,completado
+ORD-01000,2024-10-22,Camila Morales Díaz,Chile,Teclado,47.61,completado
+ORD-01001,2025-04-12,Andrés Castro Castro,España,Webcam,56.51,completado
+ORD-01002,2025/03/14,Gabriel Pérez Herrera,Argentina,Escritorio,239.31,completado
+ORD-01003,2024-01-14,Andrés Castro Castro,España,Escritorio,713.47,devuelto
+ORD-01004,2025-11-23,Julia Herrera Silva,Portugal,Monitor,224.05,completado
+ORD-01005,2024-06-21,Carmen Díaz Ortega,España,Silla ergonómica,333.88,completado
+ORD-01006,2025-02-17,Tomás Castro Gómez,España,Webcam,60.57,completado
+ORD-00132,2025-05-12,Gabriel Pérez Herrera,Argentina,Teclado,142.40,completado
+ORD-01007,2025-08-18,Paula Rodríguez Gómez,México,Escritorio,250.75,completado
+ORD-01008,2025-02-18,Nicolás Rodríguez Rodríguez,Colombia,Silla ergonómica,319.00,devuelto
+ORD-01009,2024-09-13,Julia Romero Rojas,España,Teclado,91.44,completado
+ORD-01010,2025-13-05,Diego Ruiz Romero,Portugal,Teclado,50.43,completado
+ORD-01011,2024-06-05,Andrés Castro Castro,España,Teclado,49.99,completado
+ORD-01012,19/05/2025,Martín Ruiz Navarro,Francia,Monitor,223.96,completado
+ORD-01013,2024-12-17,Diego Ortega Navarro,Colombia,Escritorio,233.87,pendiente
+ORD-01014,2025-03-16,Laura Torres Díaz,España,Portátil,2440.08,cancelado
+ORD-01015,2025-04-15,Camila Sánchez Martínez,Francia,Escritorio, ,completado
+ORD-01016,2025-03-17,Daniel Sánchez Pérez,España,Auriculares,146.09,completado
+ORD-01017,2025-05-17,Mateo Romero Morales,Francia,Escritorio,490.69,completado
+ORD-01018,2024-06-09,Mateo Martínez Castro,Colombia,Tablet,441.97,completado
+ORD-01019,2025-11-23,Hugo López Rojas,Colombia,Escritorio,238.21,completado
+ORD-01020,2024-05-11,Tomás Castro Gómez,España,Webcam,58.33,pendiente
+ORD-00700,2025-12-03,Gabriel Pérez Herrera,Argentina,Monitor,223.27,completado
+ORD-01021,2024-12-15,Gabriel Pérez Herrera,Argentina,Tablet,464.13,completado
+ORD-01022,2024-09-07,Hugo Martínez Vargas,  España ,Webcam,53.60,completado
+ORD-01023,2024-11-08,Mateo Fernández Herrera,España,Tablet,450.44,completado
+ORD-00934,2025-12-08,Mateo Martínez Castro,Colombia,Portátil,1637.27,completado
+ORD-01024,2025-03-08,Daniel Herrera Rodríguez,España,Disco SSD,105.64,completado
+ORD-01025,2024/01/23,Sebastián Silva Herrera,España,Auriculares,76.67,devuelto
+ORD-01026,2025-05-15,Gabriel Pérez Herrera,Argentina,Silla ergonómica,291.78,completado
+ORD-01027,2025-11-14,Mateo Fernández Herrera,España,Webcam,60.28,completado
+ORD-01028,2025-10-12,Martín Ortega Herrera,Colombia,Webcam,164.66,pendiente
+ORD-01029,2024-10-31,Nicolás Rodríguez Rodríguez,Colombia,Disco SSD,102.44,devuelto
+ORD-01030,2025-08-15,Hugo López Rojas,Colombia,Ratón,25.99,completado
+ORD-01031,2025-03-13,Gabriel Pérez Herrera,Argentina,Monitor,224.34,completado
+ORD-01032,2025-11-10,Nicolás Rodríguez Rodríguez,Colombia,Auriculares,74.65,completado
+ORD-01033,2025-11-18,Diego Ortega Navarro,Colombia,Silla ergonómica,311.76,completado
+ORD-01034,2024-07-10,Daniel Torres Fernández,México,Portátil,878.71,completado
+ORD-01035,2025-09-21,Diego Rodríguez Martínez,España,Escritorio,247.93,pendiente
+ORD-01036,2024-07-24,Sebastián Silva Herrera,España,Tablet,408.13,completado
+ORD-01037,2025-03-21,Carmen Martínez Ruiz,Argentina,Teclado,50.64,completado
+ORD-01038,2024-09-30,Sebastián Castro Rojas,España,Monitor,235.16,pendiente
+ORD-01039,2024-09-01,Mateo Fernández Herrera,España,Auriculares,73.90,completado
+ORD-01040,2025-05-12,Diego García López,Colombia,Ratón,47.14,completado
+ORD-01041,2024-01-30,Isabel García Díaz,España,Portátil,845.88,completado
+ORD-01042,2025-05-12,Nicolás Sánchez Navarro,Chile,Disco SSD,112.04,COMPLETADO
+ORD-01043,2024-03-06,Andrés Castro Castro,España,Monitor,216.34,cancelado
+ORD-01044,2025-02-10,Hugo López Rojas,Colombia,Webcam,60.94,cancelado
+ORD-01045,2025-05-27,Mateo Romero Morales,Francia,Teclado,49.18,cancelado
+ORD-01046,2024-09-14,Laura Ortega Martínez,España,Tablet,1400.52,completado
+ORD-01047,2024-12-03,Andrés Rojas Díaz,Chile,Tablet,458.43,pendiente
+ORD-01048,2024-04-19,Mateo Sánchez Gómez,España,Ratón,69.67,completado
+ORD-01049,2024-02-27,Tomás Castro Gómez,España,Escritorio,256.33,completado
+ORD-01050,2025-11-30,Gabriel Pérez Herrera,Argentina,Monitor,220.66,COMPLETADO
+ORD-01051,2024-11-11,Gabriel Pérez Herrera,Argentina,Teclado,50.27,completado
+ORD-01052,2024-02-25,Tomás Castro Gómez,España,Tablet,453.90,completado
+ORD-01053,2025-10-16,Nicolás Rodríguez Rodríguez,Colombia,Ratón,23.85,devuelto
+ORD-01054,2025-03-29,Gabriel Pérez Herrera,Argentina,Monitor,214.22,completado
+ORD-01055,2024-11-04,Sebastián Sánchez Romero,España,Silla ergonómica,662.05,completado
+ORD-01056,2024-06-13,Paula Herrera García,Francia,Ratón,25.62,cancelado
+ORD-01057,2024-03-23,Martín Silva Sánchez,Francia,Silla ergonómica,600.43,pendiente
+ORD-01058,2024-12-06,Sofía Fernández Torres,México,Escritorio,258.70,completado
+ORD-01059,2025-06-02,Sebastián Herrera López,España,Monitor,460.19,completado
+ORD-01060,2024-01-29,Hugo Martínez Vargas,España,Disco SSD, ,completado
+ORD-01061,2024-05-19,Mateo Fernández Herrera,España,Teclado,50.83,completado
+ORD-01062,2024-06-10,Diego Ortega Navarro,Colombia,Auriculares,,completado
+ORD-01063,2024-11-23,Mateo Romero Morales,francia,Teclado,100.09,completado
+ORD-01064,2024-12-01,Sebastián Díaz Morales,Colombia,Teclado,50.06,completado
+ORD-01065,2025-01-21,Diego Morales Rojas,Portugal,Silla ergonómica,"305,93",cancelado
+ORD-01066,2025-07-25,Sebastián Martínez Herrera,Francia,Ratón,22.50,completado
+ORD-01067,2025-12-19,Martín Silva Sánchez,Francia,Monitor,638.73,pendiente
+ORD-01068,2024-04-01,Andrés Castro Castro,España,Tablet,421.62,devuelto
+ORD-01069,2025-03-21,Daniel Herrera Rodríguez,España,Tablet,452.50,completado
+ORD-01070,2024-07-14,Sofía Castro Díaz,España,Escritorio,250.75,cancelado
+ORD-01071,2024-05-13,Nicolás Sánchez Navarro,Chile,Auriculares,76.96,completado
+ORD-01072,24-11-2025,Diego Rodríguez Martínez,España,Ratón,70.40,completado
+ORD-01073,2024-08-29,Daniel Torres Fernández,México,Teclado,52.22,completado
+ORD-01074,2024-03-28,Sebastián Silva Herrera,España,Webcam,58.83,completado
+ORD-01075,2024-08-05,Carmen Díaz López,Portugal,Webcam,169.86,completado
+ORD-01076,2024-03-01,Mateo Rodríguez Pérez,Argentina,Tablet,410.52,completado
+ORD-01077,2025-11-17,Sofía Castro Díaz,España,Escritorio,522.66,DEVUELTO
+ORD-01078,2025-01-25,Martín Morales López,México,Portátil,877.14,completado
+ORD-01079,2024-02-12,Hugo López Rojas,Colombia,Webcam,61.00,completado
+ORD-01080,2025-04-24,Gabriel Gómez Rodríguez,Argentina,Disco SSD,103.65,completado
+ORD-01081,2024-11-16,Gabriel Pérez Herrera,Argentina,Disco SSD,102.36,completado
+ORD-01082,2024-10-16,Carmen Díaz López,Portugal,Auriculares,82.08,cancelado
+ORD-01083,2024-06-17,Gabriel López Castro,España,Auriculares,76.26,completado
+ORD-01084,2025-10-13,Valentina Fernández Romero,México,Teclado,51.82,completado
+ORD-01085,2025-04-26,Andrés Castro Castro,España,Teclado,46.28,completado
+ORD-01086,2025-05-21,Mateo Navarro Sánchez,México,Silla ergonómica,329.93,completado
+ORD-01087,2024-05-31,Gabriel Pérez Herrera,Argentina,Disco SSD,106.16,completado
+ORD-01088,2025-06-04,Andrés Ruiz Gómez,México,Auriculares,73.09,pendiente
+ORD-01089,2024-01-05,Lucía Vargas Díaz,Argentina,Tablet,471.32,completado
+ORD-01090,2025-05-25,Marta Rojas Fernández,Francia,Silla ergonómica,597.76,completado
+ORD-01091,2024-05-04,Sebastián Martínez Herrera,Francia,Portátil, ,completado
+ORD-01092,2024/03/24,Martín García Torres,México,Monitor,422.76,completado
+ORD-01093,2025-08-31,Mateo Rodríguez Pérez,Argentina,Escritorio,259.78,completado
+ORD-01094,2024-11-28,Gabriel Pérez Herrera,Argentina,Portátil,937.33,cancelado
+ORD-01095,2025-10-21,Valentina Ruiz López,Chile,Tablet,462.24,completado
+ORD-01096,2024-04-04,Nicolás Romero Rojas,México,Monitor,226.79,completado
+ORD-01097,2024-06-15,Daniel Sánchez Pérez,España,Silla ergonómica,327.88,completado
+ORD-01098,2025-03-18,Hugo López Rojas,Colombia,Teclado,48.58,completado
+ORD-01099,2025-01-11,Sofía Castro Díaz,España,Tablet,448.92,completado
+ORD-01100,2025-03-09,Julia Herrera Silva,Portugal,Silla ergonómica,314.04,completado
+ORD-00414,2025-12-31,Valentina Fernández Romero,México,Disco SSD,228.55,completado
+ORD-01101,2025-03-12,Hugo Martínez Vargas,España,Webcam,56.94,completado
+ORD-01102,2025-12-31,Laura García Rojas,Argentina,Escritorio,248.29,completado
+ORD-01103,2024/03/22,Julia Herrera Silva,Portugal,Disco SSD,105.76,cancelado
+ORD-01104,2024/11/03,Julia Castro Torres,Colombia,Teclado,150.10,pendiente
+ORD-01105,2024-02-16,Laura Ortega Martínez,España,Auriculares,77.63,completado
+ORD-01106,2025-08-05,Julia Romero Rojas,España,Silla ergonómica,318.72,pendiente
+ORD-01107,2024-04-26,Gabriel Pérez Herrera,Argentina,Tablet,438.01,completado
+ORD-01108,2025-03-02,Julia Castro Herrera,México,Teclado,90.50,pendiente
+ORD-01109,2025-04-05,Gabriel Pérez Herrera,Argentina,Tablet,455.11,completado
+ORD-01110,2025-09-10,Gabriel López Castro,España,Teclado,45.50,completado
+ORD-01111,2024-04-29,Mateo Fernández Herrera,España,Silla ergonómica,287.38,completado
+ORD-01112,2025-09-08,Mateo Fernández Herrera,España,Escritorio,256.55,completado
+ORD-01113,2025-12-07,Gabriel Pérez Herrera,Argentina,Tablet,449.48,completado
+ORD-01114,2024-04-24,Nicolás Sánchez Navarro,Chile,Monitor,206.58,pendiente
+ORD-01115,2025-10-26,Mateo Martínez Castro,Colombia,Ratón,46.38,completado
+ORD-01116,2025-04-19,Elena López García,Argentina,Disco SSD,103.02,completado
+ORD-01117,2025-12-20,Hugo Martínez Vargas,España,Monitor,211.34,completado
+ORD-01118,2024-07-25,Julia Herrera Silva,Portugal,Portátil,1776.04,completado
+ORD-01119,2025-10-07,Paula Navarro Castro,España,Silla ergonómica,287.48,pendiente
+ORD-01120,2025-09-02,Hugo Pérez Castro,México,Silla ergonómica,644.74,completado
+ORD-01121,2025-08-28,Valentina Ruiz López,Chile,Portátil,874.65,completado
+ORD-01122,2024-01-20,Sofía Castro Díaz,España,Escritorio,226.37,completado
+ORD-01123,2025-04-29,Gabriel Pérez Herrera,Argentina,Monitor,228.37,completado
+ORD-01124,2024-06-14,Martín Pérez Vargas,Francia,Webcam,56.96,completado
+ORD-01125,2025-08-24,Diego García López,Colombia,Webcam,57.59,cancelado
+ORD-00504,2025-09-12,Gabriel Pérez Herrera,Argentina,Monitor,215.37,completado
+ORD-01126,2025-04-24,Gabriel Pérez Herrera,Argentina,Tablet,904.54,completado
+ORD-01127,2025-11-20,Gabriel Pérez Herrera,Argentina,Silla ergonómica,980.89,completado
+ORD-01128,2025-09-28,Gabriel Pérez Herrera,argentina,Escritorio,511.29,completado
+ORD-01129,2024-07-23,Mateo Martínez Castro,Colombia,Monitor,210.53,completado
+ORD-01130,2024-08-28,Julia Herrera Silva,Portugal,Silla ergonómica,932.17,completado
+ORD-01131,24/11/2025,Andrés Castro Castro,España,Portátil,844.27,completado
+ORD-01132,2025-03-16,Paula Navarro Castro,España,Disco SSD,99.14,completado
+ORD-01133,2024-12-14,Diego Ruiz Romero,Portugal,Disco SSD,102.32,completado
+ORD-01134,2025-12-07,Nicolás Rodríguez Rodríguez,Colombia,Disco SSD,100.57,pendiente
+ORD-01135,2025-03-24,Martín Navarro Silva,España,Monitor,237.93,completado
+ORD-01136,2025-09-16,Tomás Castro Gómez,España,Monitor,698.85,completado
+ORD-01137,2025-10-07,Sofía Ortega Herrera,Chile,Disco SSD,99.82,completado
+ORD-01138,2025-03-28,Diego Rodríguez Martínez,España,Webcam,55.69,completado
+ORD-01139,2024-05-21,Julia Herrera Silva,Portugal,Monitor,218.59,completado
+ORD-01140,2025-04-30,Diego Ortega Navarro,Colombia,Silla ergonómica,574.83,completado
+ORD-01141,2025-02-28,Julia Rodríguez Herrera,Argentina,Monitor,230.67,completado
+ORD-01142,2024-08-21,Mateo Fernández Herrera,España,Teclado,97.75,completado
+ORD-01143,2025-06-12,Hugo Martínez Vargas,España,Silla ergonómica,665.29,completado
+ORD-01144,2025-06-13,Gabriel Pérez Herrera,Argentina,Portátil,912.95,cancelado
+ORD-01145,2025-03-20,Andrés Navarro Gómez,España,Webcam,59.94,completado
+ORD-01146,2025-10-08,Nicolás Rodríguez Rodríguez,Colombia,Teclado,90.69,devuelto
+ORD-01147,2025-11-28,Nicolás Romero Rojas,México,Disco SSD,314.87,completado
+ORD-01148,2024-10-13,Sebastián Díaz Morales,Colombia,Webcam,,cancelado
+ORD-01149,2024-07-29,Martín Ortega Herrera,Colombia,Teclado,48.25,cancelado
+ORD-01150,2025-10-26,Martín Ruiz Navarro,Francia,Tablet,451.07,completado
+ORD-01151,2025-02-03,Diego Morales Rojas,Portugal,Auriculares,77.47,completado
+ORD-01152,2024-08-06,Mateo Vargas López,México,Teclado,48.96,completado
+ORD-01153,2024-01-24,Lucía López Sánchez,España,Disco SSD,108.49,completado
+ORD-01154,2024-11-07,Nicolás Romero Rojas,México,Tablet,460.15,completado
+ORD-01155,2024-09-22,Tomás López Fernández,México,Monitor,235.01,completado
+ORD-01156,2025-04-04,Gabriel Pérez Herrera,Argentina,Portátil,1872.08,completado
+ORD-01157,2025-08-18,Mateo Sánchez Gómez,España,Escritorio,232.92,completado
+ORD-01158,2024/11/02,Sebastián Navarro Navarro,España,Disco SSD,203.85,completado
+ORD-01159,16-06-2025,Nicolás Rodríguez Rodríguez,Colombia,Tablet,452.21,completado
+ORD-01160,2025-01-04,Camila Morales Díaz,Chile,Disco SSD,111.55,completado
+ORD-01161,2024-03-04,Carmen Martínez Ruiz,Argentina,Silla ergonómica,582.04,completado
+ORD-01162,2025-06-22,Carmen Díaz López,Portugal,Ratón,23.79,completado
+ORD-01163,2025-10-13,Lucía Pérez Torres,Portugal,Silla ergonómica,630.12,completado
+ORD-01164,2024-06-15,Isabel García Díaz,España,Escritorio,239.67,completado
+ORD-01165,2025-06-25,Carmen Díaz López,Portugal,Escritorio,250.41,completado
+ORD-01166,2025/07/26,Diego Rodríguez Martínez,España,Escritorio,229.96,completado
+ORD-01167,2025-01-13,Sofía Sánchez Martínez,México,Tablet,823.06,completado
+ORD-01168,18-01-2025,Andrés Castro Castro,España,Teclado,47.19,completado
+ORD-01169,2024-02-19,Julia Herrera Silva,Portugal,Teclado,49.32,cancelado
+ORD-01170,2025-05-15,Gabriel Pérez Herrera,Argentina,Auriculares,80.81,completado
+ORD-01171,2025-08-09,Lucía Herrera Gómez,España,Monitor,440.89,completado
+ORD-01172,2025-09-12,Isabel Vargas Díaz,Argentina,Webcam,,completado
+ORD-01173,2024-06-01,Carmen Díaz López,Portugal,Escritorio,498.04,pendiente
+ORD-01174,2024-08-26,Gabriel Pérez Herrera,Argentina,Tablet,431.69,cancelado
+ORD-01175,2024-10-11,Gabriel Pérez Herrera,Argentina,Portátil,2787.37,completado
+ORD-01176,2025-12-25,Sebastián Díaz López,México,Portátil,916.46,completado
+ORD-01177,2025-07-08,Mateo Fernández Herrera,España,Disco SSD,113.72,completado
+ORD-01178,2025-05-29,Andrés Castro Castro,España,Tablet,454.65,cancelado
+ORD-01179,2024-07-29,Camila Torres Gómez,España,Disco SSD,98.41,completado
+ORD-01180,2025-09-13,Mateo Navarro Sánchez,México,Tablet,458.45,completado
+ORD-01181,2025-03-23,Marta Vargas Ruiz,Colombia,Escritorio,449.94,completado
+ORD-01182,2024-04-27,Andrés Castro Castro,España,Disco SSD,102.30,devuelto
+ORD-01183,2024-04-01,Laura Torres Díaz,España,Auriculares,74.13,completado
+ORD-01184,2024-07-04,Sofía Sánchez Martínez,México,Teclado,52.10,completado
+ORD-01185,2024-11-27,Andrés Castro Castro,España,Silla ergonómica,293.92,completado
+ORD-01186,2025-09-03,Sofía Fernández Torres,México,Monitor,"214,33",completado
+ORD-01187,2024-03-03,Julia Herrera Silva,Portugal,Disco SSD,99.98,completado
+ORD-01188,2024-08-27,Lucía López Sánchez,España,Monitor,220.10,cancelado
+ORD-01189,2024-09-09,Andrés Castro Castro,España,Disco SSD,327.41,completado
+ORD-01190,2024-03-26,Mateo Fernández Herrera,España,Teclado,47.95,pendiente
+ORD-01191,2024-09-08,Julia Herrera Silva,Portugal,Teclado,52.29,completado
+ORD-01192,2025-04-20,Hugo Martínez Vargas,España,Disco SSD,98.12,devuelto
+ORD-01193,2025-05-08,Martín Pérez Vargas,Francia,Teclado,51.90,completado
+ORD-01194,2024-08-05,Elena Martínez López,España,Silla ergonómica,982.23,completado
+ORD-01195,2024-03-12,Julia Romero Rojas,España,Portátil,881.12,completado
+ORD-01196,2024-10-13,Hugo López Rojas,Colombia,Monitor,462.01,pendiente
+ORD-01197,2025-11-29,Diego Rodríguez Martínez,España,Disco SSD,309.91,cancelado
+ORD-01198,2024-11-25,Martín Vargas Torres,Chile,Escritorio,248.84,completado
+ORD-01199,2024-05-16,Javier Castro Pérez,España,Tablet,465.66,completado
+ORD-01200,2024-06-26,Ana Herrera Sánchez,España,Escritorio,224.46,completado
