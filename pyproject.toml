@@ -7,7 +7,11 @@ authors = [
     { name = "Isabel Igarza" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pandas>=3.1.1",
+    "psycopg[binary]>=3.3.9",
+    "python-dotenv>=1.2.4",
+]
 
 [build-system]
 requires = ["uv_build>=0.13.7,<0.14.0"]

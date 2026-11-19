@@ -1,15 +1,18 @@
-"""Genera un CSV de pedidos sintéticos con errores introducidos a propósito.
+"""Generate a CSV of synthetic orders with intentionally injected errors.
 
-Errores que se inyectan (para que el paso de limpieza tenga trabajo):
-  - Filas duplicadas exactas.
-  - Fechas mal escritas: otros formatos (dd/mm/yyyy, yyyy/mm/dd, dd-mm-yyyy)
-    y fechas imposibles o vacías ("2025-02-30", "2025-13-05", "", "N/A").
-  - Importes vacíos y algunos importes con coma decimal ("12,50").
-  - Ruido en textos: país y estado con mayúsculas, espacios o sin tilde.
+Injected errors (so the cleaning step has real work to do):
+  - Exact duplicate rows.
+  - Badly written dates: other formats (dd/mm/yyyy, yyyy/mm/dd, dd-mm-yyyy)
+    and impossible or empty dates ("2025-02-30", "2025-13-05", "", "N/A").
+  - Empty amounts and some amounts with a decimal comma ("12,50").
+  - Noisy text: country and status with odd casing, extra spaces or no accents.
 
-La generación es determinista (semilla fija): siempre produce el mismo CSV.
+Data values (countries, products, statuses) are in Spanish: it is the business
+language and the language users will ask questions in.
 
-Uso:
+Generation is deterministic (fixed seed): it always produces the same CSV.
+
+Usage:
     uv run python -m orders_app.generate_data [--n 1200] [--seed 42] [--output data/orders_raw.csv]
 """
 
@@ -24,7 +27,7 @@ from pathlib import Path
 
 COLUMNS = ["order_id", "order_date", "customer", "country", "product", "amount", "status"]
 
-# País -> peso (probabilidad relativa de que un cliente sea de ese país)
+# Country -> weight (relative probability of a customer living there)
 COUNTRIES = {
     "España": 35,
     "México": 20,
@@ -35,7 +38,7 @@ COUNTRIES = {
     "Portugal": 7,
 }
 
-# Producto -> precio unitario base (EUR)
+# Product -> base unit price (EUR)
 PRODUCTS = {
     "Portátil": 899.00,
     "Monitor": 229.00,
@@ -49,7 +52,7 @@ PRODUCTS = {
     "Tablet": 449.00,
 }
 
-# Estado -> peso
+# Status -> weight
 STATUSES = {"completado": 80, "pendiente": 8, "cancelado": 7, "devuelto": 5}
 
 FIRST_NAMES = [
@@ -66,7 +69,7 @@ LAST_NAMES = [
 START_DATE = date(2024, 1, 1)
 END_DATE = date(2025, 12, 31)
 
-# Proporciones de errores inyectados
+# Share of rows affected by each injected error
 DUPLICATE_RATE = 0.03
 BAD_DATE_RATE = 0.05
 EMPTY_AMOUNT_RATE = 0.04
@@ -78,7 +81,7 @@ INVALID_DATES = ["2025-02-30", "2025-13-05", "2024-00-10", "", "N/A", "fecha"]
 
 @dataclass
 class InjectionReport:
-    """Cuántos errores de cada tipo se han inyectado (se imprime al final)."""
+    """How many errors of each kind were injected (printed at the end)."""
 
     clean_rows: int = 0
     duplicates: int = 0
@@ -91,7 +94,7 @@ class InjectionReport:
 
 
 def build_customers(rng: random.Random, n_customers: int = 150) -> list[tuple[str, str]]:
-    """Crea clientes únicos (nombre, país). Cada cliente vive en un solo país."""
+    """Create unique customers (name, country). Each customer lives in a single country."""
     names: set[str] = set()
     while len(names) < n_customers:
         names.add(f"{rng.choice(FIRST_NAMES)} {rng.choice(LAST_NAMES)} {rng.choice(LAST_NAMES)}")
@@ -100,9 +103,9 @@ def build_customers(rng: random.Random, n_customers: int = 150) -> list[tuple[st
 
 
 def generate_clean_orders(rng: random.Random, n: int) -> list[dict[str, str]]:
-    """Genera n pedidos correctos (antes de inyectar errores)."""
+    """Generate n valid orders (before injecting errors)."""
     customers = build_customers(rng)
-    # Pesos tipo Pareto: unos pocos clientes compran mucho -> el top 10 tiene sentido.
+    # Pareto-like weights: a few customers buy a lot -> the top 10 view is meaningful.
     customer_weights = [1 / (i + 1) ** 0.8 for i in range(len(customers))]
     rng.shuffle(customer_weights)
     n_days = (END_DATE - START_DATE).days
@@ -112,7 +115,7 @@ def generate_clean_orders(rng: random.Random, n: int) -> list[dict[str, str]]:
         customer, country = rng.choices(customers, weights=customer_weights)[0]
         product = rng.choice(list(PRODUCTS))
         quantity = rng.choices([1, 2, 3], weights=[75, 18, 7])[0]
-        # Pequeña variación de precio (descuentos/promos) para que no todo sea idéntico.
+        # Small price variation (discounts/promos) so amounts are not all identical.
         amount = PRODUCTS[product] * quantity * rng.uniform(0.9, 1.05)
         orders.append(
             {
@@ -135,21 +138,21 @@ def _note(report: InjectionReport, kind: str, value: str) -> None:
 
 
 def _bad_date(rng: random.Random, iso: str, report: InjectionReport) -> str:
-    """Devuelve la fecha en un formato incorrecto o una fecha inválida."""
+    """Return the date in a wrong format, or an invalid date."""
     y, m, d = iso.split("-")
     if rng.random() < 0.6:
         report.reformatted_dates += 1
         value = rng.choice([f"{d}/{m}/{y}", f"{y}/{m}/{d}", f"{d}-{m}-{y}"])
-        _note(report, "fecha_otro_formato", value)
+        _note(report, "date_other_format", value)
     else:
         report.invalid_dates += 1
         value = rng.choice(INVALID_DATES)
-        _note(report, "fecha_invalida", value)
+        _note(report, "date_invalid", value)
     return value
 
 
 def _noisy_text(rng: random.Random, value: str) -> str:
-    """Ensucia un texto de forma recuperable (mayúsculas, espacios, sin tilde)."""
+    """Make a text dirty in a recoverable way (casing, spaces, missing accents)."""
     variants = [
         value.upper(),
         value.lower(),
@@ -162,12 +165,12 @@ def _noisy_text(rng: random.Random, value: str) -> str:
 def inject_errors(
     rng: random.Random, orders: list[dict[str, str]]
 ) -> tuple[list[dict[str, str]], InjectionReport]:
-    """Inyecta errores sobre una copia de los pedidos y añade duplicados."""
+    """Inject errors into a copy of the orders and append duplicates."""
     report = InjectionReport(clean_rows=len(orders))
     rows = [dict(o) for o in orders]
     n = len(rows)
 
-    # Índices disjuntos para fechas e importes: cada fila tiene como mucho un error "grave".
+    # Disjoint indices for date and amount errors: each row has at most one "hard" error.
     k_date = int(n * BAD_DATE_RATE)
     k_empty = int(n * EMPTY_AMOUNT_RATE)
     k_comma = int(n * COMMA_AMOUNT_RATE)
@@ -184,21 +187,27 @@ def inject_errors(
     for i in comma_idx:
         rows[i]["amount"] = rows[i]["amount"].replace(".", ",")
         report.comma_amounts += 1
-        _note(report, "importe_coma", rows[i]["amount"])
+        _note(report, "amount_comma", rows[i]["amount"])
 
-    # Ruido en textos (independiente de lo anterior).
+    # Text noise (independent from the errors above).
     for i in rng.sample(range(n), int(n * TEXT_NOISE_RATE)):
         col = rng.choice(["country", "status"])
         rows[i][col] = _noisy_text(rng, rows[i][col])
         report.noisy_texts += 1
-        _note(report, "texto_sucio", repr(rows[i][col]))
+        _note(report, "noisy_text", repr(rows[i][col]))
 
-    # Duplicados exactos, insertados en posiciones aleatorias.
+    # Exact duplicates, inserted at random positions.
     for i in rng.sample(range(n), int(n * DUPLICATE_RATE)):
         rows.insert(rng.randint(0, len(rows)), dict(rows[i]))
         report.duplicates += 1
 
     return rows, report
+
+
+def generate(n: int = 1200, seed: int = 42) -> tuple[list[dict[str, str]], InjectionReport]:
+    """Full generation (clean orders + injected errors). Used by the CLI and the tests."""
+    rng = random.Random(seed)
+    return inject_errors(rng, generate_clean_orders(rng, n))
 
 
 def write_csv(rows: list[dict[str, str]], path: Path) -> None:
@@ -211,25 +220,24 @@ def write_csv(rows: list[dict[str, str]], path: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--n", type=int, default=1200, help="Pedidos únicos a generar (antes de duplicar)")
+    parser.add_argument("--n", type=int, default=1200, help="Unique orders to generate (before duplicating)")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--output", type=Path, default=Path("data/orders_raw.csv"))
     args = parser.parse_args()
 
-    rng = random.Random(args.seed)
-    rows, report = inject_errors(rng, generate_clean_orders(rng, args.n))
+    rows, report = generate(args.n, args.seed)
     write_csv(rows, args.output)
 
-    print(f"CSV generado: {args.output} ({len(rows)} filas)")
-    print(f"  pedidos únicos            : {report.clean_rows}")
-    print(f"  duplicados exactos        : {report.duplicates}")
-    print(f"  fechas en otro formato    : {report.reformatted_dates}")
-    print(f"  fechas inválidas/vacías   : {report.invalid_dates}")
-    print(f"  importes vacíos           : {report.empty_amounts}")
-    print(f"  importes con coma decimal : {report.comma_amounts}")
-    print(f"  textos con ruido          : {report.noisy_texts}")
+    print(f"CSV written: {args.output} ({len(rows)} rows)")
+    print(f"  unique orders           : {report.clean_rows}")
+    print(f"  exact duplicates        : {report.duplicates}")
+    print(f"  dates in other format   : {report.reformatted_dates}")
+    print(f"  invalid/empty dates     : {report.invalid_dates}")
+    print(f"  empty amounts           : {report.empty_amounts}")
+    print(f"  decimal-comma amounts   : {report.comma_amounts}")
+    print(f"  noisy texts             : {report.noisy_texts}")
     for kind, values in report.examples.items():
-        print(f"  ej. {kind}: {', '.join(values)}")
+        print(f"  e.g. {kind}: {', '.join(values)}")
 
 
 if __name__ == "__main__":
