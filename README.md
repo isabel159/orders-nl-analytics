@@ -54,7 +54,28 @@ Las filas rechazadas se guardan en `rejected_orders` con sus valores originales,
 línea del CSV y el motivo: nada se descarta en silencio y la limpieza es auditable.
 
 ## Modelos SQL
-_Pendiente_
+
+Definidos en [`sql/02_views.sql`](sql/02_views.sql) y creados en cada carga.
+
+**Regla de negocio:** una *venta* es un pedido con estado `completado`. Los pendientes aún no son
+ingreso y los cancelados/devueltos no lo son.
+
+| Vista | Granularidad | Columnas |
+|---|---|---|
+| `v_sales_by_month_country` | mes × país | `month` (primer día del mes), `country`, `n_orders`, `total_sales`, `avg_order_value` |
+| `v_top_customers` | cliente (top 10) | `ranking`, `customer`, `country`, `n_orders`, `total_spent`, `first_order`, `last_order` |
+
+### Acceso de solo lectura
+La API no usa el usuario administrador, sino el rol `app_readonly` (creado en la carga), con
+mínimo privilegio:
+
+- `SELECT` **solo** sobre `orders`, `v_sales_by_month_country` y `v_top_customers`
+  (lista única en `config.ALLOWED_TABLES`). Sin acceso a `rejected_orders`.
+- Todas sus transacciones son de solo lectura por defecto (`default_transaction_read_only`)
+  y tienen `statement_timeout = 5s`.
+
+Es la última capa de seguridad: aunque una consulta maliciosa superase la validación de la API,
+PostgreSQL la rechazaría (`tests/test_db_permissions.py` lo comprueba).
 
 ## API
 _Pendiente_
