@@ -1,0 +1,52 @@
+{
+    // Debug configurations (VS Code + "Python Debugger" extension, which uses debugpy).
+    // Select the project interpreter first: Ctrl+Shift+P -> "Python: Select Interpreter" -> .venv
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "API: FastAPI (debug)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            // No --reload: the reloader runs the app in a child process and breakpoints would not hit.
+            "args": ["orders_app.api:app", "--port", "8000"],
+            "envFile": "${workspaceFolder}/.env",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": true
+        },
+        {
+            "name": "Pipeline: generate_data (debug)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "orders_app.generate_data",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": true
+        },
+        {
+            "name": "Pipeline: load (debug)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "orders_app.load",
+            "envFile": "${workspaceFolder}/.env",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": true
+        },
+        {
+            "name": "Tests: current file (debug)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": ["${file}", "-v", "-s"],
+            "envFile": "${workspaceFolder}/.env",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": false
+        },
+        {
+            "name": "Attach: debugpy (localhost:5678)",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": { "host": "localhost", "port": 5678 },
+            "justMyCode": true
+        }
+    ]
+}

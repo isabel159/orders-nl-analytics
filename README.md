@@ -55,6 +55,40 @@ Los de permisos (`test_db_permissions.py`) usan PostgreSQL y se saltan si no est
 | `test_llm.py` | Parseo de la respuesta del LLM, redacción de la respuesta y traducción de errores del proveedor |
 | `test_db_permissions.py` | El rol `app_readonly` no puede escribir ni leer tablas no permitidas |
 
+## Depuración con debugpy
+
+Además de los tests automáticos, el proyecto se puede **depurar paso a paso** con
+[debugpy](https://github.com/microsoft/debugpy) (dependencia de desarrollo, se instala con `uv sync`).
+Es útil para inspeccionar en vivo el SQL que genera el LLM, el resultado de la validación o los
+datos de cada fila durante la limpieza.
+
+### Opción 1: VS Code (recomendada)
+Requiere la extensión **Python Debugger** y seleccionar el intérprete del proyecto
+(`Ctrl+Shift+P` → *Python: Select Interpreter* → `.venv`). En la vista *Run and Debug* (`Ctrl+Shift+D`)
+están disponibles las configuraciones de [`.vscode/launch.json`](.vscode/launch.json):
+
+| Configuración | Qué depura |
+|---|---|
+| **API: FastAPI (debug)** | La API completa en `http://127.0.0.1:8000` |
+| **Pipeline: generate_data (debug)** | La generación del CSV |
+| **Pipeline: load (debug)** | La limpieza y la carga en PostgreSQL |
+| **Tests: current file (debug)** | El archivo de tests abierto en el editor |
+| **Attach: debugpy (localhost:5678)** | Un proceso lanzado con debugpy desde la terminal (opción 2) |
+
+Ejemplo: pon un breakpoint en `validate_query` (`src/orders_app/validator.py`), lanza
+**API: FastAPI (debug)** y haz una pregunta desde `/docs`. La ejecución se detiene y puedes ver el SQL
+que generó el LLM y cada regla que se comprueba.
+
+### Opción 2: terminal + attach
+```bash
+uv run python -m debugpy --listen 5678 --wait-for-client -m uvicorn orders_app.api:app --port 8000
+```
+El proceso espera a que se conecte un depurador. Después, en VS Code, lanza
+**Attach: debugpy (localhost:5678)**.
+
+> Al depurar la API no se usa `--reload`: el recargador ejecuta la aplicación en un proceso hijo y los
+> breakpoints no se detendrían.
+
 ## Arquitectura
 
 ```
@@ -251,6 +285,23 @@ espera exponencial antes de devolver `502`.
 - **Autenticación con JWT (JSON Web Tokens)** en la API: dependencia de FastAPI que valide firma,
   expiración y *scopes* del token en cada petición, para que solo clientes autorizados puedan consultar.
   Junto con límite de peticiones por usuario, para controlar el coste del LLM.
+- **Búsqueda semántica e híbrida con Azure AI Search:** indexar en Azure AI Search la información
+  textual relacionada con los pedidos (por ejemplo, reseñas y valoraciones de clientes, descripciones
+  de producto o comentarios de soporte), con embeddings vectoriales para combinar búsqueda por palabras
+  clave, búsqueda vectorial y reranking semántico. El LLM podría entonces unir las métricas que obtiene
+  por SQL con lo que dicen los textos (patrón RAG) y dar respuestas más específicas: por qué baja un
+  producto, qué valoran los clientes de cada país o qué acciones podrían aumentar las ventas.
+- **Detección de intenciones con CLU (Azure AI Language):** entrenar un modelo de *Conversational
+  Language Understanding* que clasifique cada mensaje en una intención (consultar, comparar, exportar,
+  crear o modificar un registro…) y extraiga sus entidades (país, producto, periodo). Así el sistema
+  podría ir más allá de la solo lectura de forma controlada: cada intención se asociaría a una acción
+  predefinida y parametrizada, con permisos propios, confirmación del usuario y registro de auditoría,
+  en lugar de permitir que el LLM genere SQL de escritura libre.
+- **Dashboard de negocio y de uso del asistente:** un panel (Power BI, Metabase o Streamlit) con los
+  indicadores principales (ventas por mes y país, top clientes y productos, ticket medio, tasa de
+  cancelaciones y devoluciones) y con el uso del asistente: preguntas más frecuentes, tasa de
+  respuestas correctas y errores por tipo, latencia y coste en tokens, alimentado por la tabla de
+  auditoría de preguntas.
 - **Conjunto de evaluación NL→SQL:** 30-50 preguntas con su resultado esperado, para medir la
   precisión del LLM y comparar modelos, prompts y nivel de razonamiento con datos, no con impresiones.
 - **dbt** para los modelos, con tests de datos (`unique`, `not_null`, `accepted_values`) y documentación.
