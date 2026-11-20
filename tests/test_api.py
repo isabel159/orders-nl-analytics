@@ -202,6 +202,28 @@ def test_health(client):
     assert client.get("/health").json() == {"status": "ok"}
 
 
+def test_responses_declare_utf8_charset(client):
+    use(FakeGenerator(SQLGeneration(SPAIN_MARCH_SQL, "...")))
+    response = client.post("/ask", json={"question": "¿cuánto vendimos en España en marzo?"})
+    assert response.headers["content-type"] == "application/json; charset=utf-8"
+
+
+def test_non_utf8_body_returns_uniform_error(client):
+    # 'España' encoded as Latin-1, as sent by curl from a Windows console.
+    body = '{"question": "¿cuánto vendimos en España?"}'.encode("latin-1")
+    response = client.post("/ask", content=body, headers={"Content-Type": "application/json"})
+
+    assert response.status_code == 400
+    assert response.json()["error"] == "invalid_request"
+    assert "UTF-8" in response.json()["detail"]
+
+
+def test_unknown_route_returns_uniform_error(client):
+    response = client.get("/nope")
+    assert response.status_code == 404
+    assert response.json() == {"error": "not_found", "detail": "Not Found"}
+
+
 def test_root_redirects_to_docs(client):
     response = client.get("/", follow_redirects=False)
     assert response.status_code == 307

@@ -22,6 +22,7 @@ from fastapi.encoders import jsonable_encoder
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse, RedirectResponse
 from pydantic import BaseModel, Field
+from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from orders_app.db import PostgresExecutor, QueryExecutionError, QueryExecutor
 from orders_app.llm import AnswerWriter, AzureOpenAILLM, LLMError, SQLGenerator
@@ -30,10 +31,18 @@ from orders_app.validator import QueryValidationError, validate_query
 logger = logging.getLogger("orders_app.api")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 
+class UTF8JSONResponse(JSONResponse):
+    """JSON with an explicit charset: some clients (e.g. Windows PowerShell 5.1) otherwise
+    decode the body as Latin-1 and break accents and the € sign."""
+
+    media_type = "application/json; charset=utf-8"
+
+
 app = FastAPI(
     title="Orders NL Analytics",
     description="Preguntas en lenguaje natural sobre los pedidos, traducidas a SQL por un LLM y validadas antes de ejecutarse.",
     version="0.1.0",
+    default_response_class=UTF8JSONResponse,
 )
 
 
@@ -110,7 +119,7 @@ def get_answer_writer() -> AnswerWriter:
 @app.exception_handler(ApiError)
 async def api_error_handler(_: Request, exc: ApiError) -> JSONResponse:
     body = ErrorResponse(error=exc.error, detail=exc.detail, sql=exc.sql)
-    return JSONResponse(status_code=exc.status_code, content=body.model_dump(exclude_none=True))
+    return UTF8JSONResponse(status_code=exc.status_code, content=body.model_dump(exclude_none=True))
 
 
 @app.exception_handler(RequestValidationError)
@@ -118,7 +127,24 @@ async def request_validation_handler(_: Request, exc: RequestValidationError) ->
     first = exc.errors()[0] if exc.errors() else {}
     field = ".".join(str(p) for p in first.get("loc", []) if p != "body")
     detail = f"{field}: {first.get('msg', 'invalid request')}" if field else first.get("msg", "invalid request")
-    return JSONResponse(status_code=422, content={"error": "invalid_request", "detail": detail})
+    return UTF8JSONResponse(status_code=422, content={"error": "invalid_request", "detail": detail})
+
+
+_HTTP_ERROR_CODES = {400: "invalid_request", 404: "not_found", 405: "method_not_allowed"}
+
+
+@app.exception_handler(StarletteHTTPException)
+async def http_error_handler(_: Request, exc: StarletteHTTPException) -> JSONResponse:
+    """Framework-level errors (unparseable body, unknown route...) with the same JSON shape."""
+    detail = str(exc.detail)
+    if exc.status_code == 400:
+        # Typically a body that is not valid UTF-8 (e.g. curl on a Windows console with accents).
+        detail += ". The request body must be JSON encoded as UTF-8."
+    return UTF8JSONResponse(
+        status_code=exc.status_code,
+        content={"error": _HTTP_ERROR_CODES.get(exc.status_code, "http_error"), "detail": detail},
+        headers=getattr(exc, "headers", None),
+    )
 
 
 # ---------- Endpoints ----------
