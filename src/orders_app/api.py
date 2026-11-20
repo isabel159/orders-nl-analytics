@@ -1,7 +1,8 @@
 """FastAPI app: answer natural-language questions about the orders data.
 
 Flow for POST /ask:
-    question -> LLM (SQL + explanation) -> validate_query -> run as app_readonly -> JSON result
+    question -> LLM (SQL + explanation) -> validate_query -> run as app_readonly
+             -> LLM (natural-language answer from the rows) -> JSON result
 
 Every failure is returned as a clear JSON error: {"error": <code>, "detail": <message>, ...}
 
@@ -23,7 +24,7 @@ from fastapi.responses import JSONResponse, RedirectResponse
 from pydantic import BaseModel, Field
 
 from orders_app.db import PostgresExecutor, QueryExecutionError, QueryExecutor
-from orders_app.llm import AzureOpenAISQLGenerator, LLMError, SQLGenerator
+from orders_app.llm import AnswerWriter, AzureOpenAILLM, LLMError, SQLGenerator
 from orders_app.validator import QueryValidationError, validate_query
 
 logger = logging.getLogger("orders_app.api")
@@ -44,6 +45,10 @@ class AskRequest(BaseModel):
         max_length=500,
         examples=["¿cuánto vendimos en España en marzo?"],
     )
+    include_answer: bool = Field(
+        default=True,
+        description="Write a natural-language answer from the result (one extra LLM call).",
+    )
 
 
 class AskResponse(BaseModel):
@@ -53,6 +58,10 @@ class AskResponse(BaseModel):
     columns: list[str]
     rows: list[list[Any]]
     row_count: int
+    answer: str | None = Field(
+        description="Natural-language answer built from the rows. null if not requested or if writing it failed "
+        "(the data above is still valid)."
+    )
 
 
 class ErrorResponse(BaseModel):
@@ -74,18 +83,26 @@ def get_executor() -> QueryExecutor:
 
 
 @lru_cache
-def _build_generator() -> SQLGenerator:
+def _build_llm() -> AzureOpenAILLM:
     min_date, max_date = get_executor().data_range()
-    return AzureOpenAISQLGenerator.from_env(min_date, max_date)
+    return AzureOpenAILLM.from_env(min_date, max_date)
 
 
-def get_sql_generator() -> SQLGenerator:
+def _get_llm() -> AzureOpenAILLM:
     try:
-        return _build_generator()
+        return _build_llm()
     except LLMError as exc:
         raise ApiError(503, "llm_not_configured", str(exc)) from exc
     except QueryExecutionError as exc:
         raise ApiError(exc.status_code, exc.code, str(exc)) from exc
+
+
+def get_sql_generator() -> SQLGenerator:
+    return _get_llm()
+
+
+def get_answer_writer() -> AnswerWriter:
+    return _get_llm()
 
 
 # ---------- Error handlers: always the same JSON shape ----------
@@ -129,6 +146,7 @@ def ask(
     body: AskRequest,
     generator: Annotated[SQLGenerator, Depends(get_sql_generator)],
     executor: Annotated[QueryExecutor, Depends(get_executor)],
+    answer_writer: Annotated[AnswerWriter, Depends(get_answer_writer)],
 ) -> AskResponse:
     question = body.question.strip()
     started = time.perf_counter()
@@ -158,12 +176,24 @@ def ask(
         logger.warning("Execution error for sql=%r: %s", safe_sql, exc)
         raise ApiError(exc.status_code, exc.code, str(exc), sql=safe_sql) from exc
 
-    logger.info("question=%r rows=%d time=%.1fs sql=%r", question, len(result.rows), time.perf_counter() - started, safe_sql)
+    rows = jsonable_encoder(result.rows)
+
+    # 4. Natural-language answer from the rows. Graceful degradation: if this step fails, the
+    #    (already valid) data is still returned, with answer = null, instead of failing the request.
+    answer = None
+    if body.include_answer:
+        try:
+            answer = answer_writer.write_answer(question, generation.explanation, result.columns, rows)
+        except LLMError as exc:
+            logger.warning("Answer writing failed for question=%r: %s | cause: %r", question, exc, exc.__cause__)
+
+    logger.info("question=%r rows=%d time=%.1fs sql=%r", question, len(rows), time.perf_counter() - started, safe_sql)
     return AskResponse(
         question=question,
         sql=safe_sql,
         explanation=generation.explanation,
         columns=result.columns,
-        rows=jsonable_encoder(result.rows),
-        row_count=len(result.rows),
+        rows=rows,
+        row_count=len(rows),
+        answer=answer,
     )

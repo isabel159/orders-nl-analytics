@@ -6,7 +6,7 @@ from decimal import Decimal
 import pytest
 from fastapi.testclient import TestClient
 
-from orders_app.api import app, get_executor, get_sql_generator
+from orders_app.api import app, get_answer_writer, get_executor, get_sql_generator
 from orders_app.db import QueryExecutionError, QueryResult
 from orders_app.llm import LLMError, SQLGeneration
 
@@ -43,16 +43,33 @@ class FakeExecutor:
         return date(2024, 1, 1), date(2025, 12, 31)
 
 
+class FakeAnswerWriter:
+    def __init__(self, answer: str = "En marzo de 2025 vendimos 3.271,59 € en España.", error: Exception | None = None):
+        self.answer, self.error, self.calls = answer, error, []
+
+    def write_answer(self, question, explanation, columns, rows) -> str:
+        self.calls.append({"question": question, "columns": columns, "rows": rows})
+        if self.error:
+            raise self.error
+        return self.answer
+
+
 @pytest.fixture
 def client():
     yield TestClient(app)
     app.dependency_overrides.clear()
 
 
-def use(generator: FakeGenerator, executor: FakeExecutor | None = None) -> FakeExecutor:
+def use(
+    generator: FakeGenerator,
+    executor: FakeExecutor | None = None,
+    writer: FakeAnswerWriter | None = None,
+) -> FakeExecutor:
     executor = executor or FakeExecutor(QueryResult(columns=["total_ventas"], rows=[[Decimal("3271.59")]]))
+    writer = writer or FakeAnswerWriter()
     app.dependency_overrides[get_sql_generator] = lambda: generator
     app.dependency_overrides[get_executor] = lambda: executor
+    app.dependency_overrides[get_answer_writer] = lambda: writer
     return executor
 
 
@@ -72,6 +89,43 @@ def test_ask_returns_validated_sql_and_rows(client):
     # What runs is the validated SQL (normalized + LIMIT), not the raw LLM text.
     assert executor.executed == [body["sql"]]
     assert body["sql"].endswith("LIMIT 1000")
+    assert body["answer"] == "En marzo de 2025 vendimos 3.271,59 € en España."
+
+
+def test_answer_is_written_from_the_database_rows(client):
+    writer = FakeAnswerWriter()
+    use(FakeGenerator(SQLGeneration(SPAIN_MARCH_SQL, "...")), writer=writer)
+
+    client.post("/ask", json={"question": "¿cuánto vendimos en España en marzo?"})
+
+    assert writer.calls == [
+        {"question": "¿cuánto vendimos en España en marzo?", "columns": ["total_ventas"], "rows": [[3271.59]]}
+    ]
+
+
+def test_answer_failure_still_returns_the_data(client):
+    """Graceful degradation: the data is valid, so a failure writing the answer does not fail the request."""
+    use(
+        FakeGenerator(SQLGeneration(SPAIN_MARCH_SQL, "...")),
+        writer=FakeAnswerWriter(error=LLMError("Could not connect to the LLM service.")),
+    )
+
+    response = client.post("/ask", json={"question": "¿cuánto vendimos en España en marzo?"})
+
+    assert response.status_code == 200
+    assert response.json()["rows"] == [[3271.59]]
+    assert response.json()["answer"] is None
+
+
+def test_answer_can_be_skipped(client):
+    writer = FakeAnswerWriter()
+    use(FakeGenerator(SQLGeneration(SPAIN_MARCH_SQL, "...")), writer=writer)
+
+    response = client.post("/ask", json={"question": "¿cuánto vendimos en España en marzo?", "include_answer": False})
+
+    assert response.status_code == 200
+    assert response.json()["answer"] is None
+    assert writer.calls == []
 
 
 def test_llm_failure_returns_502_with_clear_error(client):
