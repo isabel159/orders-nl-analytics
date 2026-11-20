@@ -118,7 +118,8 @@ class AzureOpenAISQLGenerator:
             base_url=endpoint.rstrip("/") + "/openai/v1/",
             api_key=api_key,
             timeout=float(os.getenv("LLM_TIMEOUT_SECONDS", "60")),
-            max_retries=1,
+            # Connection errors, timeouts, 429 and 5xx are retried by the SDK with exponential backoff.
+            max_retries=int(os.getenv("LLM_MAX_RETRIES", "3")),
         )
         return cls(
             client,

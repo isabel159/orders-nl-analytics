@@ -19,7 +19,7 @@ from typing import Annotated, Any
 from fastapi import Depends, FastAPI, Request
 from fastapi.encoders import jsonable_encoder
 from fastapi.exceptions import RequestValidationError
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, RedirectResponse
 from pydantic import BaseModel, Field
 
 from orders_app.db import PostgresExecutor, QueryExecutionError, QueryExecutor
@@ -106,6 +106,11 @@ async def request_validation_handler(_: Request, exc: RequestValidationError) ->
 
 # ---------- Endpoints ----------
 
+@app.get("/", include_in_schema=False)
+def root() -> RedirectResponse:
+    return RedirectResponse(url="/docs")
+
+
 @app.get("/health")
 def health() -> dict[str, str]:
     return {"status": "ok"}
@@ -132,7 +137,8 @@ def ask(
     try:
         generation = generator.generate_sql(question)
     except LLMError as exc:
-        logger.warning("LLM error for question=%r: %s", question, exc)
+        # The user gets a clear message; the log keeps the technical cause for debugging.
+        logger.warning("LLM error for question=%r: %s | cause: %r", question, exc, exc.__cause__)
         raise ApiError(502, "llm_error", str(exc)) from exc
 
     if generation.sql is None:
