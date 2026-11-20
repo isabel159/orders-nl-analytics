@@ -7,7 +7,14 @@ import httpx
 import openai
 import pytest
 
-from orders_app.llm import AzureOpenAISQLGenerator, LLMError, build_system_prompt, parse_llm_content
+from orders_app.llm import (
+    ANSWER_MAX_ROWS,
+    AzureOpenAILLM,
+    LLMError,
+    build_answer_input,
+    build_system_prompt,
+    parse_llm_content,
+)
 
 
 def test_parse_valid_content():
@@ -41,9 +48,9 @@ class FakeCompletions:
         return SimpleNamespace(choices=[SimpleNamespace(message=message)])
 
 
-def make_generator(completions: FakeCompletions) -> AzureOpenAISQLGenerator:
+def make_generator(completions: FakeCompletions) -> AzureOpenAILLM:
     client = SimpleNamespace(chat=SimpleNamespace(completions=completions))
-    return AzureOpenAISQLGenerator(client, "test-deployment", "system prompt")
+    return AzureOpenAILLM(client, "test-deployment", "system prompt")
 
 
 def test_generator_sends_question_with_strict_json_schema():
@@ -75,6 +82,33 @@ _REQUEST = httpx.Request("POST", "https://example.invalid/openai/v1/chat/complet
 def test_generator_maps_provider_errors_to_llm_error(error, message):
     with pytest.raises(LLMError, match=message):
         make_generator(FakeCompletions(error=error)).generate_sql("pregunta")
+
+
+def test_write_answer_sends_result_and_returns_text():
+    completions = FakeCompletions(content="  En marzo de 2025 vendimos 3.271,59 € en España.  ")
+
+    answer = make_generator(completions).write_answer(
+        "¿cuánto vendimos en España en marzo?", "Se asume 2025.", ["total_ventas"], [[3271.59]]
+    )
+
+    assert answer == "En marzo de 2025 vendimos 3.271,59 € en España."
+    user_message = completions.calls[0]["messages"][-1]["content"]
+    assert '"rows": [[3271.59]]' in user_message
+    assert "response_format" not in completions.calls[0]  # plain text, not JSON
+
+
+@pytest.mark.parametrize("content", [None, "", "   "])
+def test_write_answer_empty_raises_llm_error(content):
+    with pytest.raises(LLMError):
+        make_generator(FakeCompletions(content=content)).write_answer("q", "", ["x"], [[1]])
+
+
+def test_answer_input_is_truncated_for_large_results():
+    rows = [[i] for i in range(ANSWER_MAX_ROWS + 10)]
+    payload = build_answer_input("q", "note", ["n"], rows)
+    assert f'"row_count": {ANSWER_MAX_ROWS + 10}' in payload
+    assert '"truncated": true' in payload
+    assert f"[{ANSWER_MAX_ROWS + 5}]" not in payload
 
 
 def test_system_prompt_contains_schema_values_and_data_range():
