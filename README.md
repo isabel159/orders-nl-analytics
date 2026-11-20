@@ -20,18 +20,30 @@ uv run python -m orders_app.load            # limpia el CSV, lo carga en Postgre
 uv run uvicorn orders_app.api:app --reload  # API en http://127.0.0.1:8000 (docs en /docs)
 ```
 
-Ejemplo:
+La forma más sencilla de probarla es **Swagger** en `http://127.0.0.1:8000/docs` → `POST /ask` → *Try it out*.
+
+Desde la terminal (Linux / macOS / Git Bash):
 ```bash
 curl -X POST http://127.0.0.1:8000/ask \
      -H "Content-Type: application/json" \
      -d '{"question": "¿cuánto vendimos en España en marzo?"}'
 ```
 
+Desde Windows PowerShell (el cuerpo se envía explícitamente en UTF-8 para no romper los acentos):
+```powershell
+$body = '{"question": "¿cuánto vendimos en España en marzo?"}'
+Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/ask `
+  -ContentType "application/json; charset=utf-8" `
+  -Body ([System.Text.Encoding]::UTF8.GetBytes($body))
+```
+> En Windows, `curl.exe` con acentos escritos en la línea de comandos puede enviar el texto en otra
+> codificación; la API responde entonces `400 invalid_request` indicando que el cuerpo debe ser UTF-8.
+
 ## Tests
 ```bash
 uv run pytest -v
 ```
-109 tests. Los de limpieza, validación, cliente LLM y endpoint **no necesitan clave ni base de datos**:
+112 tests. Los de limpieza, validación, cliente LLM y endpoint **no necesitan clave ni base de datos**:
 el LLM y la base de datos se sustituyen por dobles en memoria (`app.dependency_overrides`).
 Los de permisos (`test_db_permissions.py`) usan PostgreSQL y se saltan si no está levantado.
 
@@ -184,7 +196,9 @@ Todos los errores tienen la misma forma: `{"error": "<código>", "detail": "<men
 
 | HTTP | `error` | Cuándo |
 |---|---|---|
-| 422 | `invalid_request` | Pregunta vacía, demasiado corta o de más de 500 caracteres (el LLM no se llama) |
+| 400 | `invalid_request` | El cuerpo no es JSON en UTF-8 |
+| 404 | `not_found` | Ruta inexistente |
+| 422 | `invalid_request` | JSON mal formado, pregunta vacía, demasiado corta o de más de 500 caracteres (el LLM no se llama) |
 | 422 | `unanswerable_question` | El LLM indica que la pregunta no se puede responder con estos datos o pide modificar datos |
 | 422 | `invalid_query` | El SQL generado no pasa la validación (no se ejecuta) |
 | 422 | `query_failed` | El SQL es seguro pero PostgreSQL no puede ejecutarlo (p. ej. columna inexistente) |
@@ -229,6 +243,7 @@ espera exponencial antes de devolver `502`.
 | **Respuesta en lenguaje natural con degradación controlada** | `answer` se redacta solo a partir de las filas obtenidas; si falla, se devuelven igualmente los datos con `answer: null`. |
 | **`gpt-5-mini` con `reasoning_effort=low`** | SQL correcto en ~5 s; un modelo mayor no aportaba precisión visible con un esquema de 3 tablas. Configurable por variable de entorno. |
 | **Reintentos solo para errores transitorios** | Al probar la API detecté cortes TLS intermitentes de mi red con Azure; los reintentos los absorben sin ocultar errores reales. |
+| **Prueba final desde un clon limpio** | Clonar el repo público y seguir el README con una base de datos vacía detectó problemas que no aparecían en mi entorno: codificación de clientes Windows (`charset=utf-8` explícito, ejemplo para PowerShell) y errores del framework que no seguían el formato uniforme. |
 | **Una rama y un PR por paso** | Cada cambio se puede revisar por separado; merge commit para conservar el historial. |
 
 ## Qué haría con más tiempo
@@ -286,6 +301,8 @@ revisaba lo que proponía, verificaba el resultado y hacía todos los commits.
 - Los errores reales del rol de solo lectura y la vista de España/marzo, que confirmó la ambigüedad de años.
 - Que las consultas validadas se ejecutan en PostgreSQL real (el validador no rompe consultas legítimas).
 - La API desde `/docs` con mis propias preguntas, donde detecté el 502 intermitente.
+- Una prueba final desde un clon limpio del repositorio público, con una base de datos nueva,
+  siguiendo el README al pie de la letra.
 
 **Qué no delegué:** las credenciales (la IA nunca vio sus valores), los commits y merges, y la
 elección de entorno y modelo.
@@ -302,5 +319,5 @@ elección de entorno y modelo.
 | Validador SQL | 15 min |
 | Cliente LLM y API | 19 min |
 | Corrección de reintentos | 9 min |
-| Respuesta en lenguaje natural | ~20 min |
-| README final y prueba desde un clon limpio | ~20 min |
+| Respuesta en lenguaje natural y README final | 23 min |
+| Prueba desde un clon limpio y corrección para clientes Windows | ~20 min |
