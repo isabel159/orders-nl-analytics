@@ -8,10 +8,13 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "fastapi>=0.165.0",
+    "openai>=3.56.0",
     "pandas>=3.1.1",
     "psycopg[binary]>=3.3.9",
     "python-dotenv>=1.2.4",
     "sqlglot>=30.33.0",
+    "uvicorn>=0.54.0",
 ]
 
 [build-system]
@@ -23,5 +26,6 @@ testpaths = ["tests"]
 
 [dependency-groups]
 dev = [
+    "httpx>=0.28.1",
     "pytest>=9.2.0",
 ]
