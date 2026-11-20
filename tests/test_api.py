@@ -146,3 +146,9 @@ def test_invalid_request_body_returns_clear_error(client, payload):
 
 def test_health(client):
     assert client.get("/health").json() == {"status": "ok"}
+
+
+def test_root_redirects_to_docs(client):
+    response = client.get("/", follow_redirects=False)
+    assert response.status_code == 307
+    assert response.headers["location"] == "/docs"
