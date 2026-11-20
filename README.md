@@ -77,6 +77,31 @@ mínimo privilegio:
 Es la última capa de seguridad: aunque una consulta maliciosa superase la validación de la API,
 PostgreSQL la rechazaría (`tests/test_db_permissions.py` lo comprueba).
 
+## Validación de las consultas
+
+El SQL que genera el LLM **nunca se ejecuta sin validar**. [`validator.py`](src/orders_app/validator.py)
+lo convierte en un árbol sintáctico (AST) con [sqlglot](https://github.com/tobymao/sqlglot), dialecto
+PostgreSQL, y lo inspecciona nodo a nodo. No se usan expresiones regulares: buscar palabras como
+`DROP` se esquiva con comentarios o comillas, y además rechaza consultas legítimas.
+
+Una consulta solo se acepta si:
+
+1. Es SQL válido y contiene **una única sentencia** (bloquea `SELECT 1; DROP TABLE orders`).
+2. Es de **lectura**: `SELECT`, `WITH ... SELECT`, `UNION`...
+3. No contiene en ningún punto del árbol escrituras, DDL ni cambios de sesión, incluidos los
+   casos escondidos dentro de un `SELECT`: `SELECT ... INTO`, `FOR UPDATE`, `WITH d AS (DELETE ...)`.
+4. Solo lee **tablas permitidas** (`config.ALLOWED_TABLES`); se admiten CTEs definidas en la propia
+   consulta. Sin acceso a otros esquemas (`pg_catalog`, `information_schema`).
+5. No llama a funciones peligrosas del servidor (`pg_read_file`, `pg_sleep`, `set_config`, `dblink`...).
+6. Devuelve como máximo 1.000 filas: se añade o se reduce el `LIMIT`.
+
+La consulta que se ejecuta se **regenera desde el AST** (sin comentarios), así que lo que corre en la
+base de datos es exactamente lo que se ha validado.
+
+**Defensa en profundidad:** aunque el validador fallara, la API se conecta con el rol `app_readonly`
+(solo lectura, solo tablas permitidas, timeout de 5 s). `tests/test_validator.py` cubre 29 consultas
+maliciosas o inválidas y 10 legítimas.
+
 ## API
 _Pendiente_
 
